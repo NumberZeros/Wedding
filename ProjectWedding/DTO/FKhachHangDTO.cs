@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class FKhachHang
+    public class FKhachHangDTO
     {
         private string tenCR { get; set; }
         private string tenCD { get; set; }

@@ -5,7 +5,7 @@ create table SANH
 (
 	MaSanh int identity primary key,
 	TenSanh varchar(100),
-	LoaiSanh int,
+	LoaiSanh varchar(100),
 	SoLuongMax int,
 	DonGiaMin int,
 	GhiChu varchar(100),
@@ -21,9 +21,9 @@ create table KHACHHANG
 create table DATTIEC
 (
 	MaDT int identity primary key,
-	NgayDT datetime,
+	NgayDT datetime2 (7),
 	Ca int,
-	TienDC money,
+	TienDC int,
 	SLBan int,
 	MaSanh int,
 	FOREIGN KEY (MaSanh) REFERENCES SANH(MaSanh),
@@ -35,9 +35,10 @@ create table HOADON
 	MaHD int identity primary key,
 	MaKH int,
 	FOREIGN KEY (MaKH) REFERENCES KHACHHANG(MAKH),
-	NgayThanhToan datetime
+	MaMenu int,
+	NgayThanhToan datetime2 (7)
 )
-create table Menu
+create table MENU
 (
 	MaMenu int identity primary key,
 	Ten varchar(100),
@@ -46,12 +47,13 @@ create table Menu
 	FOREIGN KEY (MaHD) REFERENCES HOADON(MAHD),
 	GhiChu varchar(100)
 )
-create table QuiDinh
+create table QUIDINH
 (
 	MaQD int identity primary key,
 	TenQD varchar(100),
 	Phat varchar(100)
 )
 
-alter table KHACHHANG ADD MaDT int 
-alter table KHACHHANG ADD constraint fk_dattiec foreign key (MaDT) references DATTIEC(MaDT)
+
+ALTER TABLE HOADON ADD CONSTRAINT FK_MENU
+ FOREIGN KEY (MaMenu) REFERENCES MENU(MaMenu)

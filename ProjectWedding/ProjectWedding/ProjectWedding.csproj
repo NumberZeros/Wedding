@@ -62,6 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Form\DataBindings.cs" />
     <Compile Include="Form\FBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -193,6 +194,16 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Anh\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BUS\BUS.csproj">
+      <Project>{69a6205a-fe66-4ae3-b5f8-36c6cd78ed3b}</Project>
+      <Name>BUS</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\DTO\DTO.csproj">
+      <Project>{59202ed7-fc74-4c4f-96a0-b3e7afcefc3c}</Project>
+      <Name>DTO</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class FDatTiec
+    public class FDatTiec_DTO
     {
         private DateTime ngayDT { get; set; }
         private string ca { get; set; }

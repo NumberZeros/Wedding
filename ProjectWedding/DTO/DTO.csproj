@@ -40,12 +40,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="FDatTiec.cs" />
-    <Compile Include="FHoaDon.cs" />
-    <Compile Include="FKhachHang.cs" />
-    <Compile Include="FMenu.cs" />
-    <Compile Include="FNoiQui.cs" />
-    <Compile Include="FSanh.cs" />
+    <Compile Include="FDatTiec_DTO.cs" />
+    <Compile Include="FHoaDon_DTO.cs" />
+    <Compile Include="FKhachHangDTO.cs" />
+    <Compile Include="FMenu_DTO.cs" />
+    <Compile Include="FNoiQui_DTO.cs" />
+    <Compile Include="FSanh_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

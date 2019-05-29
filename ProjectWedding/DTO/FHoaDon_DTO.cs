@@ -4,9 +4,11 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace DAL
+namespace DTO
 {
-    public class Class1
+    public class FHoaDon_DTO
     {
+        private int maKH { get; set; }
+        private DateTime ngayThanhToan { get; set; }
     }
 }

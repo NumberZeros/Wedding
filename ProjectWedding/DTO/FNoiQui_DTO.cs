@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class FHoaDon
+    public class FNoiQui_DTO
     {
-        private int maKH { get; set; }
-        private DateTime ngayThanhToan { get; set; }
+        private string TenQD { get; set; }
+        private int Phat { get; set; }
     }
 }

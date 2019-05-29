@@ -47,12 +47,12 @@
             this.ptUpdate = new System.Windows.Forms.PictureBox();
             this.label9 = new System.Windows.Forms.Label();
             this.ptHelp = new System.Windows.Forms.PictureBox();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.gridSanh = new System.Windows.Forms.DataGridView();
             ((System.ComponentModel.ISupportInitialize)(this.ptAdd)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptDele)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptUpdate)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptHelp)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSanh)).BeginInit();
             this.SuspendLayout();
             // 
             // btsReturn
@@ -153,6 +153,7 @@
             this.ptAdd.Size = new System.Drawing.Size(100, 50);
             this.ptAdd.TabIndex = 13;
             this.ptAdd.TabStop = false;
+            this.ptAdd.Click += new System.EventHandler(this.ptAdd_Click);
             // 
             // label6
             // 
@@ -214,22 +215,23 @@
             this.ptHelp.TabIndex = 19;
             this.ptHelp.TabStop = false;
             // 
-            // dataGridView1
+            // gridSanh
             // 
-            this.dataGridView1.AllowUserToOrderColumns = true;
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(12, 270);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(765, 150);
-            this.dataGridView1.TabIndex = 21;
+            this.gridSanh.AllowUserToOrderColumns = true;
+            this.gridSanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridSanh.Location = new System.Drawing.Point(15, 276);
+            this.gridSanh.Name = "gridSanh";
+            this.gridSanh.RowTemplate.Height = 24;
+            this.gridSanh.Size = new System.Drawing.Size(765, 150);
+            this.gridSanh.TabIndex = 21;
+            this.gridSanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSanh_CellContentClick);
             // 
             // FSanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.dataGridView1);
+            this.ClientSize = new System.Drawing.Size(800, 438);
+            this.Controls.Add(this.gridSanh);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.ptHelp);
             this.Controls.Add(this.label8);
@@ -253,11 +255,12 @@
             this.Name = "FSanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSanh";
+            this.Load += new System.EventHandler(this.FSanh_Load);
             ((System.ComponentModel.ISupportInitialize)(this.ptAdd)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptDele)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptUpdate)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ptHelp)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridSanh)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -284,6 +287,6 @@
         private System.Windows.Forms.PictureBox ptUpdate;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.PictureBox ptHelp;
-        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.DataGridView gridSanh;
     }
 }

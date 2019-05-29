@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    class FMenu
+    public class FMenu_DTO
     {
         private string maMenu { get; set; }
         private int donGia { get; set; }
