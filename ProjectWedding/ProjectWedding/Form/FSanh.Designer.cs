@@ -224,7 +224,6 @@
             this.gridSanh.RowTemplate.Height = 24;
             this.gridSanh.Size = new System.Drawing.Size(765, 150);
             this.gridSanh.TabIndex = 21;
-            this.gridSanh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSanh_CellContentClick);
             // 
             // FSanh
             // 

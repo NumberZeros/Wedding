@@ -28,7 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FBaoCao));
             this.btbcReturn = new System.Windows.Forms.Button();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -44,7 +43,6 @@
             // 
             this.btbcReturn.FlatAppearance.MouseOverBackColor = System.Drawing.Color.Maroon;
             this.btbcReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btbcReturn.Image = ((System.Drawing.Image)(resources.GetObject("btbcReturn.Image")));
             this.btbcReturn.Location = new System.Drawing.Point(12, 12);
             this.btbcReturn.Name = "btbcReturn";
             this.btbcReturn.Size = new System.Drawing.Size(92, 70);

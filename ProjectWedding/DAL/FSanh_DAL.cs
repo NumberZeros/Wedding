@@ -5,35 +5,13 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data.SqlClient;
 using System.Data;
-using System.Configuration;
 using DTO;
 
 namespace DAL
 {
     public class FSanh_DAL
     {
-        /// <summary>
-        /// Tạo kết nối với database
-        /// </summary>
-        private string connectionString;
-
-        public string ConnectionString
-        {
-            get
-            {
-                return connectionString;
-            }
-
-            set
-            {
-                connectionString = value;
-            }
-        }
-        public FSanh_DAL()
-        {
-            connectionString = ConfigurationManager.AppSettings["connectionString"];
-        }
-
+        private string ConnectionString = "Data Source=DESKTOP-2E24HCM;Initial Catalog=QuanLyTiecCuoi;Integrated Security=True";
         //tạo danh sách và đưa dữ liệu vào danh sách
 
         public List<FSanh_DTO> select()
@@ -41,7 +19,8 @@ namespace DAL
             List<FSanh_DTO> listSanh = new List<FSanh_DTO>();
             string query = string.Empty;
             // câu lệnh thực hiện truy vấn 
-            query = "select [MaSanh],[TenSanh],[LoaiSanh],[SoLuongMax],[DonGiaMin],[GhiChu] from [SANH]";
+            query += "select [MaSanh],[TenSanh],[LoaiSanh],[SoLuongMax],[DonGiaMin],[GhiChu]";
+            query +=" from [SANH]";
             using (SqlConnection conn = new SqlConnection(ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand())
@@ -52,7 +31,7 @@ namespace DAL
                     try
                     {
                         conn.Open();
-                        SqlDataReader reader = null;
+                        SqlDataReader reader=null;
                         reader = cmd.ExecuteReader();
                         if (reader.HasRows == true)
                         {
