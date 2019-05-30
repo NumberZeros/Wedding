@@ -62,7 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\DataBindings.cs" />
     <Compile Include="Form\FBaoCao.cs">
       <SubType>Form</SubType>
     </Compile>

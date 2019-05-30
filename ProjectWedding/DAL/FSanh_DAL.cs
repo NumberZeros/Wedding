@@ -11,7 +11,7 @@ namespace DAL
 {
    public class FSanh_DAL
     {
-        KetNoi_DAL con = new KetNoi_DAL();
+        FXuLy con = new FXuLy();
         FSanh_DTO sanhDTO = new FSanh_DTO();
         public DataTable LoadSanh()
         {
