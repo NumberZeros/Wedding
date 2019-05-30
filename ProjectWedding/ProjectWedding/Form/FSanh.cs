@@ -33,9 +33,13 @@ namespace ProjectWedding
 
         private void FSanh_Load(object sender, EventArgs e)
         {
-
-            sanhBUS = new FSanh_BUS();
-            gridSanh.DataSource = sanhBUS.LoadData();
+            List<FSanh_DTO> listSanh = new List<FSanh_DTO>();
+            if(listSanh==null)
+            {
+               DialogResult kq= MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
+                if (kq == DialogResult.Yes)
+                    Application.Restart();
+            }
         }
 
         private void ptAdd_Click(object sender, EventArgs e)

@@ -11,12 +11,11 @@ namespace BUS
 {
     public class FSanh_BUS
     {
-        private FSanh_DTO db=new FSanh_DTO();
-        private FSanh_DAL sanhDAL=new FSanh_DAL();
-        public DataTable LoadData()
+        FSanh_DAL sanhDAL = new FSanh_DAL();
+        
+        public List<FSanh_DTO> select()
         {
-            DataTable kq = sanhDAL.LoadSanh();
-            return kq;
+            return sanhDAL.select();
         }
 
     }

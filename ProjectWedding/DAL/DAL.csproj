@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
@@ -46,7 +47,6 @@
     <Compile Include="FHoaDon_DAL.cs" />
     <Compile Include="FMenu_DAL.cs" />
     <Compile Include="FSanh_DAL.cs" />
-    <Compile Include="FXuLy.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
