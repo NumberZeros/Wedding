@@ -12,11 +12,19 @@ namespace BUS
     public class FSanh_BUS
     {
         FSanh_DAL sanhDAL = new FSanh_DAL();
-        
+        FXuLy_DAL xl = new FXuLy_DAL();
         public List<FSanh_DTO> select()
         {
             return sanhDAL.select();
         }
 
+        public bool ADD(FSanh_DTO sanhDTO)
+        {
+            String query = String.Empty;
+            query += "insert into SANH(TenSanh, LoaiSanh, SoLuongMax,DonGiaMin,GhiChu)";
+            query += "values('" + sanhDTO.tenSanh + "','" + sanhDTO.loaiSanh + "','" + sanhDTO.soluongMax + "','" + sanhDTO.donGiaMin + "','" + sanhDTO.ghiChu + "')";
+            bool kq = xl.Command(query);
+            return kq;
+        }
     }
 }
