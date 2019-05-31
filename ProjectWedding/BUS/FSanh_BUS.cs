@@ -11,13 +11,20 @@ namespace BUS
 {
     public class FSanh_BUS
     {
-        private FSanh_DTO db=new FSanh_DTO();
-        private FSanh_DAL sanhDAL=new FSanh_DAL();
-        public DataTable LoadData()
+        FSanh_DAL sanhDAL = new FSanh_DAL();
+        FXuLy_DAL xl = new FXuLy_DAL();
+        public List<FSanh_DTO> select()
         {
-            DataTable kq = sanhDAL.LoadSanh();
-            return kq;
+            return sanhDAL.select();
         }
 
+        public bool ADD(FSanh_DTO sanhDTO)
+        {
+            String query = String.Empty;
+            query += "insert into SANH(TenSanh, LoaiSanh, SoLuongMax,DonGiaMin,GhiChu)";
+            query += "values('" + sanhDTO.tenSanh + "','" + sanhDTO.loaiSanh + "','" + sanhDTO.soluongMax + "','" + sanhDTO.donGiaMin + "','" + sanhDTO.ghiChu + "')";
+            bool kq = xl.Command(query);
+            return kq;
+        }
     }
 }

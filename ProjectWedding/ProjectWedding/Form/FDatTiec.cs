@@ -58,5 +58,7 @@ namespace ProjectWedding
             this.Close();
             main.Show();
         }
+
+       
     }
 }
