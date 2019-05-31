@@ -90,7 +90,24 @@ namespace ProjectWedding
         }
         private void FSanh_Load(object sender, EventArgs e)
         {
-            LoadSanh(); 
+            LoadSanh();
+
+        }
+
+
+        private void btSua_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btTroGiup_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btXoa_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -109,6 +126,5 @@ namespace ProjectWedding
                 MessageBox.Show("Thêm dữ liệu thất bại", "Vui lòng kiểm tra lại thông tin");
             LoadSanh();
         }
-
     }
 }
