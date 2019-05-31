@@ -58,7 +58,7 @@
             this.bthdReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.bthdReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.bthdReturn.Location = new System.Drawing.Point(12, 11);
-            this.bthdReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.bthdReturn.Margin = new System.Windows.Forms.Padding(2);
             this.bthdReturn.Name = "bthdReturn";
             this.bthdReturn.Size = new System.Drawing.Size(71, 26);
             this.bthdReturn.TabIndex = 0;
@@ -83,7 +83,7 @@
             // textBox1
             // 
             this.textBox1.Location = new System.Drawing.Point(106, 77);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(197, 20);
             this.textBox1.TabIndex = 3;
@@ -91,7 +91,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(106, 111);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(197, 20);
             this.textBox2.TabIndex = 4;
@@ -99,7 +99,7 @@
             // textBox3
             // 
             this.textBox3.Location = new System.Drawing.Point(108, 147);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(2);
             this.textBox3.Name = "textBox3";
             this.textBox3.Size = new System.Drawing.Size(195, 20);
             this.textBox3.TabIndex = 5;
@@ -107,7 +107,7 @@
             // dateTimePicker1
             // 
             this.dateTimePicker1.Location = new System.Drawing.Point(121, 184);
-            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dateTimePicker1.Margin = new System.Windows.Forms.Padding(2);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(182, 20);
             this.dateTimePicker1.TabIndex = 6;
@@ -160,7 +160,7 @@
             // 
             this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView1.Location = new System.Drawing.Point(342, 77);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowTemplate.Height = 24;
             this.dataGridView1.Size = new System.Drawing.Size(241, 122);
@@ -213,11 +213,11 @@
             // dataGridView2
             // 
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Location = new System.Drawing.Point(342, 225);
-            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.dataGridView2.Location = new System.Drawing.Point(342, 228);
+            this.dataGridView2.Margin = new System.Windows.Forms.Padding(2);
             this.dataGridView2.Name = "dataGridView2";
             this.dataGridView2.RowTemplate.Height = 24;
-            this.dataGridView2.Size = new System.Drawing.Size(241, 122);
+            this.dataGridView2.Size = new System.Drawing.Size(241, 134);
             this.dataGridView2.TabIndex = 16;
             // 
             // label10
@@ -235,7 +235,7 @@
             // 
             this.label11.AutoSize = true;
             this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Location = new System.Drawing.Point(339, 210);
+            this.label11.Location = new System.Drawing.Point(339, 213);
             this.label11.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(64, 13);
@@ -259,11 +259,11 @@
             this.btThanhToan.Click += new System.EventHandler(this.button1_Click);
             // 
             // FHoaDon
-            // Thay đổi background, chỉnh vị trí
+            // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;
-            this.ClientSize = new System.Drawing.Size(600, 366);
+            this.ClientSize = new System.Drawing.Size(600, 381);
             this.Controls.Add(this.label11);
             this.Controls.Add(this.label10);
             this.Controls.Add(this.dataGridView2);
@@ -284,7 +284,7 @@
             this.Controls.Add(this.btThanhToan);
             this.Controls.Add(this.bthdReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FHoaDon";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FHoaDon";

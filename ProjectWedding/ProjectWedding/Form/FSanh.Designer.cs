@@ -53,10 +53,10 @@
             this.btsReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btsReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.btsReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btsReturn.Location = new System.Drawing.Point(12, 12);
-            this.btsReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btsReturn.Location = new System.Drawing.Point(9, 10);
+            this.btsReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btsReturn.Name = "btsReturn";
-            this.btsReturn.Size = new System.Drawing.Size(100, 32);
+            this.btsReturn.Size = new System.Drawing.Size(75, 26);
             this.btsReturn.TabIndex = 0;
             this.btsReturn.Text = "Return";
             this.btsReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -68,63 +68,73 @@
             this.gridSanh.AllowUserToOrderColumns = true;
             this.gridSanh.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.gridSanh.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.gridSanh.Location = new System.Drawing.Point(20, 340);
-            this.gridSanh.Margin = new System.Windows.Forms.Padding(4);
+            this.gridSanh.Location = new System.Drawing.Point(21, 187);
             this.gridSanh.Name = "gridSanh";
             this.gridSanh.RowTemplate.Height = 24;
-            this.gridSanh.Size = new System.Drawing.Size(1020, 185);
+            this.gridSanh.Size = new System.Drawing.Size(645, 150);
             this.gridSanh.TabIndex = 21;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(61, 219);
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(35, 94);
+            this.label5.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(57, 17);
+            this.label5.Size = new System.Drawing.Size(47, 13);
             this.label5.TabIndex = 31;
-            this.label5.Text = "Ghi chú";
+            this.label5.Text = "Ghi chú:";
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(743, 67);
+            this.label4.BackColor = System.Drawing.Color.Transparent;
+            this.label4.Location = new System.Drawing.Point(540, 60);
+            this.label4.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(61, 17);
+            this.label4.Size = new System.Drawing.Size(50, 13);
             this.label4.TabIndex = 30;
-            this.label4.Text = "Đơn giá ";
+            this.label4.Text = "Đơn giá :";
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(489, 67);
+            this.label3.BackColor = System.Drawing.Color.Transparent;
+            this.label3.Location = new System.Drawing.Point(347, 60);
+            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(144, 17);
+            this.label3.Size = new System.Drawing.Size(113, 13);
             this.label3.TabIndex = 29;
-            this.label3.Text = "Số Lượng Bàn Tối Đa";
+            this.label3.Text = "Số Lượng Bàn Tối Đa:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(323, 67);
+            this.label2.BackColor = System.Drawing.Color.Transparent;
+            this.label2.Location = new System.Drawing.Point(190, 60);
+            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(72, 17);
+            this.label2.Size = new System.Drawing.Size(58, 13);
             this.label2.TabIndex = 28;
-            this.label2.Text = "Loại Sảnh";
+            this.label2.Text = "Loại Sảnh:";
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(61, 69);
+            this.label1.BackColor = System.Drawing.Color.Transparent;
+            this.label1.Location = new System.Drawing.Point(33, 60);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 17);
+            this.label1.Size = new System.Drawing.Size(57, 13);
             this.label1.TabIndex = 27;
-            this.label1.Text = "Tên Sảnh";
+            this.label1.Text = "Tên Sảnh:";
             // 
             // tbGhiChu
             // 
-            this.tbGhiChu.Location = new System.Drawing.Point(181, 214);
+            this.tbGhiChu.Location = new System.Drawing.Point(91, 91);
+            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbGhiChu.Name = "tbGhiChu";
-            this.tbGhiChu.Size = new System.Drawing.Size(653, 22);
+            this.tbGhiChu.Size = new System.Drawing.Size(564, 20);
             this.tbGhiChu.TabIndex = 26;
             // 
             // cbLoai
@@ -136,77 +146,110 @@
             "C",
             "D",
             "E"});
-            this.cbLoai.Location = new System.Drawing.Point(401, 60);
+            this.cbLoai.Location = new System.Drawing.Point(252, 57);
+            this.cbLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(48, 24);
+            this.cbLoai.Size = new System.Drawing.Size(66, 21);
             this.cbLoai.TabIndex = 25;
             // 
             // tbDonGia
             // 
-            this.tbDonGia.Location = new System.Drawing.Point(810, 64);
+            this.tbDonGia.Location = new System.Drawing.Point(594, 57);
+            this.tbDonGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbDonGia.Name = "tbDonGia";
-            this.tbDonGia.Size = new System.Drawing.Size(100, 22);
+            this.tbDonGia.Size = new System.Drawing.Size(61, 20);
             this.tbDonGia.TabIndex = 24;
             // 
             // tbSLBan
             // 
-            this.tbSLBan.Location = new System.Drawing.Point(637, 64);
+            this.tbSLBan.Location = new System.Drawing.Point(464, 57);
+            this.tbSLBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSLBan.Name = "tbSLBan";
-            this.tbSLBan.Size = new System.Drawing.Size(100, 22);
+            this.tbSLBan.Size = new System.Drawing.Size(55, 20);
             this.tbSLBan.TabIndex = 23;
             // 
             // tbTen
             // 
-            this.tbTen.Location = new System.Drawing.Point(181, 64);
+            this.tbTen.Location = new System.Drawing.Point(91, 57);
+            this.tbTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbTen.Name = "tbTen";
-            this.tbTen.Size = new System.Drawing.Size(100, 22);
+            this.tbTen.Size = new System.Drawing.Size(76, 20);
             this.tbTen.TabIndex = 22;
             // 
             // btTroGiup
             // 
-            this.btTroGiup.Location = new System.Drawing.Point(807, 255);
+            this.btTroGiup.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btTroGiup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btTroGiup.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btTroGiup.Image = global::ProjectWedding.Properties.Resources.information;
+            this.btTroGiup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btTroGiup.Location = new System.Drawing.Point(524, 130);
+            this.btTroGiup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btTroGiup.Name = "btTroGiup";
-            this.btTroGiup.Size = new System.Drawing.Size(100, 50);
+            this.btTroGiup.Size = new System.Drawing.Size(91, 28);
             this.btTroGiup.TabIndex = 35;
             this.btTroGiup.Text = "Trợ Giúp";
-            this.btTroGiup.UseVisualStyleBackColor = true;
+            this.btTroGiup.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btTroGiup.UseVisualStyleBackColor = false;
             this.btTroGiup.Click += new System.EventHandler(this.btTroGiup_Click);
             // 
             // btSua
             // 
-            this.btSua.Location = new System.Drawing.Point(598, 255);
+            this.btSua.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSua.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btSua.Image = global::ProjectWedding.Properties.Resources.pencil;
+            this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSua.Location = new System.Drawing.Point(367, 130);
+            this.btSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(100, 50);
+            this.btSua.Size = new System.Drawing.Size(91, 28);
             this.btSua.TabIndex = 34;
             this.btSua.Text = "Sửa";
-            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSua.UseVisualStyleBackColor = false;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
-            this.btXoa.Location = new System.Drawing.Point(373, 255);
+            this.btXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btXoa.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btXoa.Image = global::ProjectWedding.Properties.Resources.delete;
+            this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btXoa.Location = new System.Drawing.Point(206, 130);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(100, 50);
+            this.btXoa.Size = new System.Drawing.Size(91, 28);
             this.btXoa.TabIndex = 33;
             this.btXoa.Text = "Xoá";
-            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btThem
             // 
-            this.btThem.Location = new System.Drawing.Point(159, 255);
+            this.btThem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btThem.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
+            this.btThem.Image = global::ProjectWedding.Properties.Resources.add_1_;
+            this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btThem.Location = new System.Drawing.Point(60, 130);
+            this.btThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(100, 50);
+            this.btThem.Size = new System.Drawing.Size(91, 28);
             this.btThem.TabIndex = 32;
             this.btThem.Text = "Thêm";
-            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // FSanh
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 539);
+            this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;
+            this.ClientSize = new System.Drawing.Size(683, 365);
             this.Controls.Add(this.btTroGiup);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btXoa);
@@ -224,7 +267,7 @@
             this.Controls.Add(this.gridSanh);
             this.Controls.Add(this.btsReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FSanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSanh";
