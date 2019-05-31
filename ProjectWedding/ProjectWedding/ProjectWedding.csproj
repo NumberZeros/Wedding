@@ -232,5 +232,53 @@
   <ItemGroup>
     <None Include="Resources\MagnetStreet_PinkMarble_1920x1080.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\back-arrow1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search%284%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\statistics%281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\food-and-restaurant1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bills1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add%281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\delete.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\pencil.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\information.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\magnifier.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\MagnetStreet_PinkMarble_1920x10801.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

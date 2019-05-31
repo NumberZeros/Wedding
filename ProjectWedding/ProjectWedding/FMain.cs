@@ -28,41 +28,39 @@ namespace ProjectWedding
         {
             Application.Exit();
         }
-
-        private void ptTraCuu_Click(object sender, EventArgs e)
-        {
-            FTraCuu traCuu = new FTraCuu();
-            this.Hide();
-            traCuu.Show();
-
-        }
-
-        private void ptSanh_Click(object sender, EventArgs e)
+        private void btSanh_Click(object sender, EventArgs e)
         {
             FSanh sanh = new FSanh();
             this.Hide();
             sanh.Show();
         }
 
-        private void ptDacTiec_Click(object sender, EventArgs e)
+        private void btDatTiec_Click(object sender, EventArgs e)
         {
             FDatTiec datTiec = new FDatTiec();
             this.Hide();
             datTiec.Show();
         }
 
-        private void pictureBox5_Click(object sender, EventArgs e)
+        private void btTraCuu_Click(object sender, EventArgs e)
         {
-            FHoaDon hoaDon = new FHoaDon();
+            FTraCuu traCuu = new FTraCuu();
             this.Hide();
-            hoaDon.Show();
+            traCuu.Show();
         }
 
-        private void ptBaoCao_Click(object sender, EventArgs e)
+        private void btBaoCao_Click(object sender, EventArgs e)
         {
             FBaoCao baoCao = new FBaoCao();
             this.Hide();
             baoCao.Show();
+        }
+
+        private void btHoaDon_Click(object sender, EventArgs e)
+        {
+            FHoaDon hoaDon = new FHoaDon();
+            this.Hide();
+            hoaDon.Show();
         }
     }
 }
