@@ -259,7 +259,7 @@
             this.btThanhToan.Click += new System.EventHandler(this.button1_Click);
             // 
             // FHoaDon
-            // 
+            // Thay đổi background, chỉnh vị trí
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;

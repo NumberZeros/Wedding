@@ -28,13 +28,7 @@ namespace ProjectWedding
         {
             Application.Exit();
         }
-        private void btSanh_Click(object sender, EventArgs e)
-        {
-            FSanh sanh = new FSanh();
-            this.Hide();
-            sanh.Show();
-        }
-
+        
         private void btDatTiec_Click(object sender, EventArgs e)
         {
             FDatTiec datTiec = new FDatTiec();
@@ -61,6 +55,13 @@ namespace ProjectWedding
             FHoaDon hoaDon = new FHoaDon();
             this.Hide();
             hoaDon.Show();
+        }
+
+        private void btSanh_Click_1(object sender, EventArgs e)
+        {
+            FSanh sanh = new FSanh();
+            this.Hide();
+            sanh.Show();
         }
     }
 }

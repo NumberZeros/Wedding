@@ -32,22 +32,29 @@
             this.SuspendLayout();
             // 
             // btMenuMonAn
-            // 
-            this.btMenuMonAn.Location = new System.Drawing.Point(12, 12);
+            // chỉnh nút , cho thêm icon
+            this.btMenuMonAn.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btMenuMonAn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btMenuMonAn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
+            this.btMenuMonAn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btMenuMonAn.Location = new System.Drawing.Point(9, 10);
+            this.btMenuMonAn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btMenuMonAn.Name = "btMenuMonAn";
-            this.btMenuMonAn.Size = new System.Drawing.Size(75, 65);
+            this.btMenuMonAn.Size = new System.Drawing.Size(72, 29);
             this.btMenuMonAn.TabIndex = 0;
             this.btMenuMonAn.Text = "Return ";
-            this.btMenuMonAn.UseVisualStyleBackColor = true;
+            this.btMenuMonAn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btMenuMonAn.UseVisualStyleBackColor = false;
             this.btMenuMonAn.Click += new System.EventHandler(this.btMenuMonAn_Click);
             // 
             // FMenu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(600, 366);
             this.Controls.Add(this.btMenuMonAn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuMonAn";

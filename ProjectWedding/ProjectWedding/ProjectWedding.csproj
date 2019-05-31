@@ -280,5 +280,8 @@
   <ItemGroup>
     <None Include="Resources\MagnetStreet_PinkMarble_1920x10801.jpg" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Main2.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

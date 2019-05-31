@@ -33,11 +33,11 @@
             this.btExit = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
-            this.btSanh = new System.Windows.Forms.Button();
             this.btDatTiec = new System.Windows.Forms.Button();
             this.btHoaDon = new System.Windows.Forms.Button();
             this.btTraCuu = new System.Windows.Forms.Button();
             this.btBaoCao = new System.Windows.Forms.Button();
+            this.btSanh = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btReturn
@@ -86,22 +86,6 @@
             this.notifyIcon1.Text = "notifyIcon1";
             this.notifyIcon1.Visible = true;
             // 
-            // btSanh
-            // 
-            this.btSanh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btSanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btSanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.btSanh.Image = global::ProjectWedding.Properties.Resources.search;
-            this.btSanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSanh.Location = new System.Drawing.Point(77, 159);
-            this.btSanh.Name = "btSanh";
-            this.btSanh.Size = new System.Drawing.Size(200, 31);
-            this.btSanh.TabIndex = 14;
-            this.btSanh.Text = "Danh sách sảnh";
-            this.btSanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btSanh.UseVisualStyleBackColor = false;
-            this.btSanh.Click += new System.EventHandler(this.btSanh_Click);
-            // 
             // btDatTiec
             // 
             this.btDatTiec.BackColor = System.Drawing.SystemColors.ButtonHighlight;
@@ -109,7 +93,7 @@
             this.btDatTiec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btDatTiec.Image = global::ProjectWedding.Properties.Resources.food_and_restaurant;
             this.btDatTiec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btDatTiec.Location = new System.Drawing.Point(307, 190);
+            this.btDatTiec.Location = new System.Drawing.Point(307, 191);
             this.btDatTiec.Name = "btDatTiec";
             this.btDatTiec.Size = new System.Drawing.Size(139, 31);
             this.btDatTiec.TabIndex = 15;
@@ -166,17 +150,33 @@
             this.btBaoCao.UseVisualStyleBackColor = false;
             this.btBaoCao.Click += new System.EventHandler(this.btBaoCao_Click);
             // 
+            // btSanh
+            // 
+            this.btSanh.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btSanh.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btSanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
+            this.btSanh.Image = global::ProjectWedding.Properties.Resources.search;
+            this.btSanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.btSanh.Location = new System.Drawing.Point(77, 161);
+            this.btSanh.Name = "btSanh";
+            this.btSanh.Size = new System.Drawing.Size(200, 31);
+            this.btSanh.TabIndex = 19;
+            this.btSanh.Text = "Danh sách sảnh";
+            this.btSanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.btSanh.UseVisualStyleBackColor = false;
+            this.btSanh.Click += new System.EventHandler(this.btSanh_Click_1);
+            // 
             // FMain
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProjectWedding.Properties.Resources.Main;
+            this.BackgroundImage = global::ProjectWedding.Properties.Resources.Main1;
             this.ClientSize = new System.Drawing.Size(584, 361);
+            this.Controls.Add(this.btSanh);
             this.Controls.Add(this.btBaoCao);
             this.Controls.Add(this.btTraCuu);
             this.Controls.Add(this.btHoaDon);
             this.Controls.Add(this.btDatTiec);
-            this.Controls.Add(this.btSanh);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btReturn);
@@ -195,10 +195,10 @@
         private System.Windows.Forms.Button btExit;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.NotifyIcon notifyIcon1;
-        private System.Windows.Forms.Button btSanh;
         private System.Windows.Forms.Button btDatTiec;
         private System.Windows.Forms.Button btHoaDon;
         private System.Windows.Forms.Button btTraCuu;
         private System.Windows.Forms.Button btBaoCao;
+        private System.Windows.Forms.Button btSanh;
     }
 }

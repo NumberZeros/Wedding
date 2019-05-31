@@ -135,6 +135,7 @@
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // btXemBaoCao
+            //Thêm nút xem báo cáo 
             // 
             this.btXemBaoCao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btXemBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;

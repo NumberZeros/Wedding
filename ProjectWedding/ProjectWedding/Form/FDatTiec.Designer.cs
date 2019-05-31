@@ -291,7 +291,7 @@
             this.label9.Text = "Đặt Tiệc";
             // 
             // FDatTiec
-            // 
+            // thêm background, chỉnh positions
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;
