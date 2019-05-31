@@ -109,5 +109,6 @@ namespace ProjectWedding
                 MessageBox.Show("Thêm dữ liệu thất bại", "Vui lòng kiểm tra lại thông tin");
             LoadSanh();
         }
+
     }
 }

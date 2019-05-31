@@ -49,8 +49,6 @@ D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FDatTie
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FHoaDon.resources
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FSanh.resources
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FTraCuu.resources
-D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.MenuMonAn.resources
-D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.MenuDichVu.resources
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.frm1.resources
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.frm2.resources
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.Properties.Resources.resources
@@ -97,3 +95,10 @@ D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.P
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.csproj.GenerateResource.Cache
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.exe
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.pdb
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\BUS.dll
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\DTO.dll
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\DAL.dll
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\BUS.pdb
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\DTO.pdb
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\DAL.pdb
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FMenu.resources
