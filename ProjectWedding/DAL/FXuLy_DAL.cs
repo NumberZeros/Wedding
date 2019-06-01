@@ -14,7 +14,7 @@ namespace DAL
 {
     public class FXuLy_DAL
     {
-        private string ConnectionString = "Data Source=DESKTOP-2E24HCM;Initial Catalog=QuanLyTiecCuoi;Integrated Security=True";
+        private string ConnectionString = @"Data Source=DESKTOP-FBKFN4T\SQLEXPRESS;Initial Catalog=QuanLyTiecCuoi;Integrated Security=True";
 
         public bool Command(String sql)
         {

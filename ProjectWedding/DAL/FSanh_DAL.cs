@@ -11,7 +11,7 @@ namespace DAL
 {
     public class FSanh_DAL
     {
-        private string ConnectionString = "Data Source=DESKTOP-2E24HCM;Initial Catalog=QuanLyTiecCuoi;Integrated Security=True";
+        private string ConnectionString = @"Data Source=DESKTOP-FBKFN4T\SQLEXPRESS;Initial Catalog=NEW;Integrated Security=True";
         //tạo danh sách và đưa dữ liệu vào danh sách
 
         public List<FSanh_DTO> select()
