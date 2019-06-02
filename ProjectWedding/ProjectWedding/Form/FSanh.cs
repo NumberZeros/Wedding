@@ -97,7 +97,23 @@ namespace ProjectWedding
 
         private void btSua_Click(object sender, EventArgs e)
         {
-
+            sanhDTO.maSanh = int.Parse(label6.Text);
+            sanhDTO.tenSanh = tbTen.Text;
+            sanhDTO.loaiSanh = cbLoai.Text;
+            sanhDTO.soluongMax = int.Parse(tbSLBan.Text);
+            sanhDTO.donGiaMin = int.Parse(tbDonGia.Text);
+            sanhDTO.ghiChu = tbGhiChu.Text;
+            if (sanhDTO != null)
+            {
+                bool kq = sanhBUS.Update(sanhDTO);
+                if (kq == false)
+                    MessageBox.Show("Sửa kiểu nấu thất bại. Vui lòng kiểm tra lại dữ liệu");
+                else
+                {
+                    MessageBox.Show("Sửa Kiểu nấu thành công");
+                    LoadSanh();
+                }
+            }
         }
 
         private void btTroGiup_Click(object sender, EventArgs e)
@@ -107,7 +123,22 @@ namespace ProjectWedding
 
         private void btXoa_Click(object sender, EventArgs e)
         {
-
+            int currentRowIndex = gridSanh.CurrentCellAddress.Y;
+            if (-1 < currentRowIndex && currentRowIndex < gridSanh.RowCount)
+            {
+                sanhDTO = (FSanh_DTO)gridSanh.Rows[currentRowIndex].DataBoundItem;
+                if (sanhDTO != null)
+                {
+                    bool kq = sanhBUS.delete(sanhDTO);
+                    if (kq == false)
+                        MessageBox.Show("Xóa kiểu nấu thất bại. Vui lòng kiểm tra lại dũ liệu");
+                    else
+                    {
+                        MessageBox.Show("Xóa Kiểu nấu thành công");
+                        LoadSanh();
+                    }
+                }
+            }
         }
 
         private void btThem_Click(object sender, EventArgs e)
@@ -125,6 +156,19 @@ namespace ProjectWedding
             else
                 MessageBox.Show("Thêm dữ liệu thất bại", "Vui lòng kiểm tra lại thông tin");
             LoadSanh();
+        }
+
+        private void gridSanh_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            int indexRow;
+            indexRow = e.RowIndex;
+            DataGridViewRow row = gridSanh.Rows[indexRow];
+            label6.Text = row.Cells[0].Value.ToString();
+            tbTen.Text = row.Cells[1].Value.ToString();
+            cbLoai.Text = row.Cells[2].Value.ToString();
+            tbSLBan.Text = row.Cells[3].Value.ToString();
+            tbDonGia.Text = row.Cells[4].Value.ToString();
+            tbGhiChu.Text = row.Cells[5].Value.ToString();
         }
     }
 }
