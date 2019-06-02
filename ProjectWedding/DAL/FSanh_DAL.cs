@@ -11,7 +11,7 @@ namespace DAL
 {
     public class FSanh_DAL
     {
-        private string ConnectionString = "Data Source=DESKTOP-2E24HCM;Initial Catalog=QuanLyTiecCuoi;Integrated Security=True";
+        FXuLy_DAL xuLy = new FXuLy_DAL();
         //tạo danh sách và đưa dữ liệu vào danh sách
 
         public List<FSanh_DTO> select()
@@ -21,7 +21,7 @@ namespace DAL
             // câu lệnh thực hiện truy vấn 
             query += "select [MaSanh],[TenSanh],[LoaiSanh],[SoLuongMax],[DonGiaMin],[GhiChu]";
             query +=" from [SANH]";
-            using (SqlConnection conn = new SqlConnection(ConnectionString))
+            using (SqlConnection conn = new SqlConnection(xuLy.ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand())
                 {
