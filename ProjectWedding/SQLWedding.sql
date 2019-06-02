@@ -8,7 +8,23 @@ create table SANH
 	LoaiSanh varchar(100),
 	SoLuongMax int,
 	DonGiaMin int,
-	GhiChu varchar(100),
+	GhiChu varchar(100)
+)
+
+create table DATTIEC
+(
+	MaDT int identity primary key,
+	NgayDT datetime2 (7),
+	Ca int,
+	TienDC int,
+	SLBan int,
+	MaCTDT int,
+	SoBanDuTru int
+)
+
+create table CTDT
+(
+	MaCTDT int primary key,
 )
 
 create table KHACHHANG
@@ -18,42 +34,41 @@ create table KHACHHANG
 	TenCD varchar(100),
 	SoDienThoai int,
 )
-create table DATTIEC
-(
-	MaDT int identity primary key,
-	NgayDT datetime2 (7),
-	Ca int,
-	TienDC int,
-	SLBan int,
-	MaSanh int,
-	FOREIGN KEY (MaSanh) REFERENCES SANH(MaSanh),
-	SoBanDuTru int
-)
 
 create table HOADON
 (
 	MaHD int identity primary key,
-	MaKH int,
-	FOREIGN KEY (MaKH) REFERENCES KHACHHANG(MAKH),
-	MaMenu int,
 	NgayThanhToan datetime2 (7)
 )
-create table MENU
+
+create table Menu
 (
 	MaMenu int identity primary key,
 	Ten varchar(100),
 	DonGia money,
+	GhiChu varchar(100),
 	MaHD int,
-	FOREIGN KEY (MaHD) REFERENCES HOADON(MAHD),
-	GhiChu varchar(100)
+	FOREIGN KEY (MaHD) REFERENCES HOADON(MaHD) on update cascade,
 )
+
+
+alter table dattiec add CONSTRAINT FK_CTDT
+ FOREIGN KEY (MaCTDT) REFERENCES CTDT(MaCTDT) on update cascade
+
+ alter table dattiec add MaKH int
+
+ alter table dattiec add CONSTRAINT FK_KhacHang
+ FOREIGN KEY (MaKH) REFERENCES KHACHHANG(MaKH) on update cascade
+
+ alter table dattiec add MaKH int
+
+ alter table khachhang add MaHD int
+ alter table KHACHHANG add CONSTRAINT FK_HOADON
+ FOREIGN KEY (MaHD) REFERENCES HOADON(MaHD) on update cascade
+
 create table QUIDINH
 (
 	MaQD int identity primary key,
 	TenQD varchar(100),
 	Phat varchar(100)
 )
-
-
-ALTER TABLE HOADON ADD CONSTRAINT FK_MENU
- FOREIGN KEY (MaMenu) REFERENCES MENU(MaMenu)
