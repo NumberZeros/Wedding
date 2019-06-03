@@ -102,3 +102,4 @@ D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\bin\Debug\DTO.pdb
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\bin\Debug\DAL.pdb
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.exe
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.pdb
+D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\MaterialSkin.dll
