@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class FKhachHang_DAL
+    public class FKhachHang_DAL
     {
     }
 }

@@ -8,7 +8,9 @@ namespace DTO
 {
     public class FHoaDon_DTO
     {
-        private int maKH { get; set; }
-        private DateTime ngayThanhToan { get; set; }
+        // thay doi 
+        public int maHD { get; set; }
+        public DateTime ngayThanhToan { get; set; }
+        public int maSanh { get; set; }
     }
 }

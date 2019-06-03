@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class FHoaDon_DAL
+    public class FHoaDon_DAL
     {
     }
 }

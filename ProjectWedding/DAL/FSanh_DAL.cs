@@ -59,5 +59,40 @@ namespace DAL
             }
             return listSanh;
         }
+
+        public bool sua(FSanh_DTO sanhDTO)
+        {
+            string query = String.Empty;
+            query += "update sanh set [TenSanh]=@tenSanh, [LoaiSanh]=@loaiSanh, [SoLuongMax]=@soLuongMax, [DonGiaMin]=@donGiaMin,";
+            query += "[GhiChu]=@ghiChu where [MaSanh]=@maSanh";
+            using (SqlConnection con = new SqlConnection(xuLy.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@maSanh", sanhDTO.maSanh);
+                    cmd.Parameters.AddWithValue("@tenSanh", sanhDTO.tenSanh);
+                    cmd.Parameters.AddWithValue("@loaiSanh", sanhDTO.loaiSanh);
+                    cmd.Parameters.AddWithValue("@soLuongMax", sanhDTO.soluongMax);
+                    cmd.Parameters.AddWithValue("@donGiaMin", sanhDTO.donGiaMin);
+                    cmd.Parameters.AddWithValue("@ghiChu", sanhDTO.ghiChu);
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
     }
 }
