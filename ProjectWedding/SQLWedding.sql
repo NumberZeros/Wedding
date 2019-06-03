@@ -71,6 +71,12 @@ create table Menu
 
 
 
+ -- thêm khóa ngoại MaSanh cho bảng HOADON
+ alter table HOADON add MaSanh int
+ alter table HOADON add CONSTRAINT FK_MaSanh_HoaDon
+ FOREIGN KEY (MaSanh) REFERENCES SANH(MaSanh) 
+
+
 create table QUIDINH
 (
 	MaQD int identity primary key,
