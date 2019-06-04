@@ -46,10 +46,10 @@
             this.btReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.btReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btReturn.Location = new System.Drawing.Point(11, 11);
-            this.btReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btReturn.Location = new System.Drawing.Point(15, 14);
+            this.btReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btReturn.Name = "btReturn";
-            this.btReturn.Size = new System.Drawing.Size(71, 26);
+            this.btReturn.Size = new System.Drawing.Size(95, 32);
             this.btReturn.TabIndex = 0;
             this.btReturn.Text = "Return";
             this.btReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -62,10 +62,10 @@
             this.btExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btExit.Image = global::ProjectWedding.Properties.Resources.login_square_arrow_button_outline;
             this.btExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btExit.Location = new System.Drawing.Point(516, 11);
-            this.btExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btExit.Location = new System.Drawing.Point(688, 14);
+            this.btExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(57, 26);
+            this.btExit.Size = new System.Drawing.Size(76, 32);
             this.btExit.TabIndex = 1;
             this.btExit.Text = "Exit";
             this.btExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -75,10 +75,9 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(250, 92);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.label2.Location = new System.Drawing.Point(333, 113);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(0, 13);
+            this.label2.Size = new System.Drawing.Size(0, 17);
             this.label2.TabIndex = 9;
             // 
             // notifyIcon1
@@ -93,9 +92,10 @@
             this.btDatTiec.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btDatTiec.Image = global::ProjectWedding.Properties.Resources.food_and_restaurant;
             this.btDatTiec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btDatTiec.Location = new System.Drawing.Point(307, 191);
+            this.btDatTiec.Location = new System.Drawing.Point(409, 235);
+            this.btDatTiec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDatTiec.Name = "btDatTiec";
-            this.btDatTiec.Size = new System.Drawing.Size(139, 31);
+            this.btDatTiec.Size = new System.Drawing.Size(185, 38);
             this.btDatTiec.TabIndex = 15;
             this.btDatTiec.Text = "Đặt tiệc";
             this.btDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -109,11 +109,12 @@
             this.btHoaDon.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btHoaDon.Image = global::ProjectWedding.Properties.Resources.bills;
             this.btHoaDon.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btHoaDon.Location = new System.Drawing.Point(307, 266);
+            this.btHoaDon.Location = new System.Drawing.Point(409, 327);
+            this.btHoaDon.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btHoaDon.Name = "btHoaDon";
-            this.btHoaDon.Size = new System.Drawing.Size(114, 31);
+            this.btHoaDon.Size = new System.Drawing.Size(152, 38);
             this.btHoaDon.TabIndex = 16;
-            this.btHoaDon.Text = "Hóa đơn";
+            this.btHoaDon.Text = "Quản lý Hóa đơn";
             this.btHoaDon.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btHoaDon.UseVisualStyleBackColor = false;
             this.btHoaDon.Click += new System.EventHandler(this.btHoaDon_Click);
@@ -125,9 +126,10 @@
             this.btTraCuu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btTraCuu.Image = global::ProjectWedding.Properties.Resources.search_4_;
             this.btTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTraCuu.Location = new System.Drawing.Point(126, 229);
+            this.btTraCuu.Location = new System.Drawing.Point(168, 282);
+            this.btTraCuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btTraCuu.Name = "btTraCuu";
-            this.btTraCuu.Size = new System.Drawing.Size(151, 31);
+            this.btTraCuu.Size = new System.Drawing.Size(201, 38);
             this.btTraCuu.TabIndex = 17;
             this.btTraCuu.Text = "Tra cứu tiệc";
             this.btTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -141,9 +143,10 @@
             this.btBaoCao.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btBaoCao.Image = global::ProjectWedding.Properties.Resources.statistics_1_;
             this.btBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btBaoCao.Location = new System.Drawing.Point(160, 299);
+            this.btBaoCao.Location = new System.Drawing.Point(213, 368);
+            this.btBaoCao.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btBaoCao.Name = "btBaoCao";
-            this.btBaoCao.Size = new System.Drawing.Size(117, 31);
+            this.btBaoCao.Size = new System.Drawing.Size(156, 38);
             this.btBaoCao.TabIndex = 18;
             this.btBaoCao.Text = "Báo cáo";
             this.btBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -157,9 +160,10 @@
             this.btSanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
             this.btSanh.Image = global::ProjectWedding.Properties.Resources.search;
             this.btSanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSanh.Location = new System.Drawing.Point(77, 161);
+            this.btSanh.Location = new System.Drawing.Point(103, 198);
+            this.btSanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSanh.Name = "btSanh";
-            this.btSanh.Size = new System.Drawing.Size(200, 31);
+            this.btSanh.Size = new System.Drawing.Size(267, 38);
             this.btSanh.TabIndex = 19;
             this.btSanh.Text = "Danh sách sảnh";
             this.btSanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,10 +172,10 @@
             // 
             // FMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.Main1;
-            this.ClientSize = new System.Drawing.Size(584, 361);
+            this.ClientSize = new System.Drawing.Size(779, 444);
             this.Controls.Add(this.btSanh);
             this.Controls.Add(this.btBaoCao);
             this.Controls.Add(this.btTraCuu);
@@ -181,7 +185,7 @@
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FMain";
             this.Text = "main";
             this.ResumeLayout(false);
