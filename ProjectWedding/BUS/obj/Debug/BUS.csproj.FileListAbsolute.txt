@@ -7,15 +7,6 @@ D:\GitHub\Wedding\ProjectWedding\BUS\bin\Debug\DTO.pdb
 D:\GitHub\Wedding\ProjectWedding\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\GitHub\Wedding\ProjectWedding\BUS\obj\Debug\BUS.dll
 D:\GitHub\Wedding\ProjectWedding\BUS\obj\Debug\BUS.pdb
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\BUS.dll
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\BUS.pdb
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DAL.dll
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DTO.dll
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DAL.pdb
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DTO.pdb
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\obj\Debug\BUS.dll
-D:\Git_Projrect\Wedding\ProjectWedding\BUS\obj\Debug\BUS.pdb
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\bin\Debug\BUS.dll
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\bin\Debug\BUS.pdb
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\bin\Debug\DAL.dll
@@ -25,3 +16,12 @@ D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\bin
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\obj\Debug\BUS.dll
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\BUS\obj\Debug\BUS.pdb
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\BUS.dll
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\BUS.pdb
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DAL.dll
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DTO.dll
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DAL.pdb
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\bin\Debug\DTO.pdb
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\obj\Debug\BUS.csprojResolveAssemblyReference.cache
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\obj\Debug\BUS.dll
+D:\Git_Projrect\Wedding\ProjectWedding\BUS\obj\Debug\BUS.pdb
