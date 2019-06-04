@@ -48,6 +48,9 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MaterialSkin">
+      <HintPath>C:\Users\DELL\Documents\Visual Studio 2015\Projects\UI_lttq\packages\MaterialSkin.0.2.1\lib\MaterialSkin.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
@@ -282,6 +285,9 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\Main2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Login2.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
