@@ -43,7 +43,7 @@
             this.tbAccount.CausesValidation = false;
             this.tbAccount.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbAccount.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.tbAccount.Location = new System.Drawing.Point(220, 127);
+            this.tbAccount.Location = new System.Drawing.Point(187, 120);
             this.tbAccount.Margin = new System.Windows.Forms.Padding(2);
             this.tbAccount.Name = "tbAccount";
             this.tbAccount.Size = new System.Drawing.Size(182, 26);
@@ -56,7 +56,7 @@
             this.tbPass.BackColor = System.Drawing.SystemColors.Window;
             this.tbPass.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbPass.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbPass.Location = new System.Drawing.Point(220, 170);
+            this.tbPass.Location = new System.Drawing.Point(187, 163);
             this.tbPass.Margin = new System.Windows.Forms.Padding(2);
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(182, 26);
@@ -69,7 +69,7 @@
             this.btLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F);
-            this.btLogin.Location = new System.Drawing.Point(259, 211);
+            this.btLogin.Location = new System.Drawing.Point(226, 204);
             this.btLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btLogin.Name = "btLogin";
             this.btLogin.Size = new System.Drawing.Size(98, 34);
@@ -83,7 +83,7 @@
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::ProjectWedding.Properties.Resources._lock;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(186, 170);
+            this.pictureBox2.Location = new System.Drawing.Point(153, 163);
             this.pictureBox2.Name = "pictureBox2";
             this.pictureBox2.Size = new System.Drawing.Size(23, 23);
             this.pictureBox2.TabIndex = 5;
@@ -94,7 +94,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::ProjectWedding.Properties.Resources.user_1_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(187, 130);
+            this.pictureBox1.Location = new System.Drawing.Point(154, 123);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(23, 23);
             this.pictureBox1.TabIndex = 4;
@@ -106,7 +106,7 @@
             this.tbExit.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.tbExit.Image = global::ProjectWedding.Properties.Resources.login_square_arrow_button_outline;
             this.tbExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tbExit.Location = new System.Drawing.Point(503, 11);
+            this.tbExit.Location = new System.Drawing.Point(465, 11);
             this.tbExit.Margin = new System.Windows.Forms.Padding(2);
             this.tbExit.Name = "tbExit";
             this.tbExit.Size = new System.Drawing.Size(54, 31);
@@ -121,8 +121,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
-            this.BackgroundImage = global::ProjectWedding.Properties.Resources.Login;
-            this.ClientSize = new System.Drawing.Size(568, 322);
+            this.BackgroundImage = global::ProjectWedding.Properties.Resources.Login1;
+            this.ClientSize = new System.Drawing.Size(530, 340);
             this.Controls.Add(this.pictureBox2);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.tbExit);
