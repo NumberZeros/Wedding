@@ -52,9 +52,6 @@ namespace ProjectWedding
 
         private void btHoaDon_Click(object sender, EventArgs e)
         {
-            FHoaDon hoaDon = new FHoaDon();
-            this.Hide();
-            hoaDon.Show();
         }
 
         private void btSanh_Click_1(object sender, EventArgs e)

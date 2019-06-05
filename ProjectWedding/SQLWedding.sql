@@ -42,7 +42,7 @@ create table Menu
 (
 	MaMenu int primary key,
 	Ten varchar(100),
-	DonGia money,
+	DonGia int,
 	GhiChu varchar(100),
 	MaHD int,
 	FOREIGN KEY (MaHD) REFERENCES HOADON(MaHD) on update cascade,
@@ -75,6 +75,7 @@ create table Menu
  alter table HOADON add MaSanh int
  alter table HOADON add CONSTRAINT FK_MaSanh_HoaDon
  FOREIGN KEY (MaSanh) REFERENCES SANH(MaSanh) 
+
 
 
 create table QUIDINH

@@ -113,6 +113,12 @@
     <Compile Include="Form\FMenu.Designer.cs">
       <DependentUpon>FMenu.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\FQuanLyHoaDon.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FQuanLyHoaDon.Designer.cs">
+      <DependentUpon>FQuanLyHoaDon.cs</DependentUpon>
+    </Compile>
     <Compile Include="frm1.cs">
       <SubType>UserControl</SubType>
     </Compile>
