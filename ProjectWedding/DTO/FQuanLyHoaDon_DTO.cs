@@ -6,9 +6,9 @@ using System.Threading.Tasks;
 
 namespace DTO
 {
-    public class FHoaDon_DTO
+    public class FQuanLyHoaDon_DTO
     {
-        // thay doi 
+        // chỉnh sửa giống với FHoaDon 
         public int maHD { get; set; }
         public DateTime ngayThanhToan { get; set; }
         public int maSanh { get; set; }

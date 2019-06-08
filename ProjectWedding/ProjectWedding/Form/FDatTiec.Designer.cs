@@ -50,8 +50,6 @@
             this.btDatTiec = new System.Windows.Forms.Button();
             this.label9 = new System.Windows.Forms.Label();
             this.cbCa = new System.Windows.Forms.ComboBox();
-            this.ngayTT = new System.Windows.Forms.DateTimePicker();
-            this.label10 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btdtReturn
@@ -286,32 +284,12 @@
             this.cbCa.Size = new System.Drawing.Size(94, 24);
             this.cbCa.TabIndex = 25;
             // 
-            // ngayTT
-            // 
-            this.ngayTT.Location = new System.Drawing.Point(240, 400);
-            this.ngayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.ngayTT.Name = "ngayTT";
-            this.ngayTT.Size = new System.Drawing.Size(252, 22);
-            this.ngayTT.TabIndex = 26;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.BackColor = System.Drawing.Color.Transparent;
-            this.label10.Location = new System.Drawing.Point(106, 400);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(123, 17);
-            this.label10.TabIndex = 27;
-            this.label10.Text = "Ngày Thanh Toán";
-            // 
             // FDatTiec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.label10);
-            this.Controls.Add(this.ngayTT);
             this.Controls.Add(this.cbCa);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.btDatTiec);
@@ -369,7 +347,5 @@
         private System.Windows.Forms.Button btDatTiec;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.ComboBox cbCa;
-        private System.Windows.Forms.DateTimePicker ngayTT;
-        private System.Windows.Forms.Label label10;
     }
 }

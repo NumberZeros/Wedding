@@ -46,6 +46,7 @@
     <Compile Include="FMenu_DTO.cs" />
     <Compile Include="FMonAn_DTO.cs" />
     <Compile Include="FNoiQui_DTO.cs" />
+    <Compile Include="FQuanLyHoaDon_DTO.cs" />
     <Compile Include="FSanh_DTO.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

@@ -137,16 +137,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.AutoSize = true;
-            this.ClientSize = new System.Drawing.Size(1430, 803);
-            this.Controls.Add(this.cbMaKH);
-            this.Controls.Add(this.flowLayoutPanel1);
-            this.Controls.Add(this.gridAn);
-            this.Controls.Add(this.btThanhToan);
-            this.Controls.Add(this.btTimKiem);
-            this.Controls.Add(this.tbTimKiem);
-            this.Controls.Add(this.gridMenu);
-            this.Controls.Add(this.btUndo);
+            this.ClientSize = new System.Drawing.Size(1166, 450);
             this.Controls.Add(this.btMenuMonAn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);

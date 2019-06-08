@@ -48,6 +48,7 @@
     <Compile Include="FMenu_BUS.cs" />
     <Compile Include="FMonAn_BUS.cs" />
     <Compile Include="FNoiQUi_BUS.cs" />
+    <Compile Include="FQuanLyHoaDon_BUS.cs" />
     <Compile Include="FSanh_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

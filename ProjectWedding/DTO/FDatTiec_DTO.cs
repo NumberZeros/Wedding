@@ -21,6 +21,6 @@ namespace DTO
         // thêm biến tạm để truyền tên khach hàng và mã sảnh
         public string tenCRFake { get; set; }
         public string tenCDFake { get; set; }
-        public int loaiSanhFake { get; set; }
+        public string loaiSanhFake { get; set; }
     }
 }

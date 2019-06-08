@@ -29,9 +29,9 @@ namespace BUS
 
         public bool delete(FSanh_DTO sanhDTO)
         {
-            string query = "delete from Sanh where MaSanh='"+sanhDTO.maSanh+"'";
+            string query = "delete from Sanh where MaSanh='" + sanhDTO.maSanh + "'";
             bool kq = xl.Command(query);
-           return kq;
+            return kq;
         }
 
         public bool Update(FSanh_DTO sanhDTO)

@@ -13,5 +13,6 @@ namespace DTO
        public string tenCR { get; set; }
        public string tenCD { get; set; }
        public int soDT { get; set; }
+       public int maHD { get; set; }
     }
 }

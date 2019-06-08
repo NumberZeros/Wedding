@@ -26,7 +26,6 @@ namespace ProjectWedding
         FSanh_BUS sanhBUS = new FSanh_BUS();
         FKhachHang_BUS khachHangBUS = new FKhachHang_BUS();
         FDatTiec_BUS datTiecBUS = new FDatTiec_BUS();
-        FHoaDon_BUS hoaDonBUS = new FHoaDon_BUS();
 
         private void btdtReturn_Click(object sender, EventArgs e)
         {
@@ -65,7 +64,7 @@ namespace ProjectWedding
         }
 
         // load loại sảnh lên bảng đặt tiệc sau đó trả về mã sảnh
-        private void LoadLoaiSanh()
+        private int LoadLoaiSanh()
         {
             List<FSanh_DTO> listLoadSanh = sanhBUS.select();
             if(listLoadSanh==null)
@@ -77,15 +76,19 @@ namespace ProjectWedding
             cbSanh.ValueMember = "maSanh";
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[cbSanh.DataSource];
             myCurrencyManager.Refresh();
-            
-
-            if (cbSanh.Items.Count > 0)
-            {
-                cbSanh.SelectedIndex = 0;
-            }
+            return sanhDTO.maSanh;
         }
 
         //kiem tra co load duoc sanh hay khong
+        private bool CheckMaSanh()
+        {
+            bool kq = false;
+            if(LoadLoaiSanh() != null)
+            {
+                kq = true;
+            }
+            return kq;
+        }
 
         // them khach hang vao truoc khi an nut Kiem tra
         private bool InsertKhacHang()
@@ -107,21 +110,12 @@ namespace ProjectWedding
             datTiecDTO.slBan = int.Parse(tbSlBan.Text);
             datTiecDTO.tenCRFake = tbTenCR.Text;
             datTiecDTO.tenCDFake = tbTenCD.Text;
-            datTiecDTO.loaiSanhFake = int.Parse(cbSanh.SelectedValue.ToString());
+            datTiecDTO.loaiSanhFake = cbSanh.Text;
             bool kq=datTiecBUS.Add(datTiecDTO);
             if(kq==true)
             {
                 MessageBox.Show("Kiem Tra thanh Cong. Moi ban chon Menu", "Thong Bao",  MessageBoxButtons.OK);
             }
-        }
-
-        private void InsertHoadDon()
-        {
-            hoaDonDTO.ngayThanhToan = DateTime.Parse(ngayTT.Value.ToString());
-            hoaDonDTO.tenCRFake = tbTenCR.Text;
-            hoaDonDTO.tenCDFake = tbTenCD.Text;
-            hoaDonDTO.loaiSanhFake = int.Parse(cbSanh.SelectedValue.ToString());
-            hoaDonBUS.Add(hoaDonDTO);
         }
 
         // insert dữ liệu vào các bảng
@@ -131,8 +125,10 @@ namespace ProjectWedding
             {
                 if(InsertKhacHang()==true)
                 {
-                    InsertHoadDon();
-                    InsertDatTiec();
+                    if(CheckMaSanh()==true)
+                    {
+                        InsertDatTiec();
+                    }
                 }
             }
             catch(Exception ex)
@@ -141,8 +137,6 @@ namespace ProjectWedding
             }
 
         }
-
-
 
         private void FDatTiec_Load(object sender, EventArgs e)
         {
