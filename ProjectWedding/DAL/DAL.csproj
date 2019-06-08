@@ -42,6 +42,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FKhachHang_DAL.cs" />
+    <Compile Include="FMonAn_DAL.cs" />
     <Compile Include="FNoiQui_DAL.cs" />
     <Compile Include="FDatTiec_DAL.cs" />
     <Compile Include="FHoaDon_DAL.cs" />

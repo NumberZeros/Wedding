@@ -9,24 +9,21 @@ using DTO;
 
 namespace DAL
 {
-    public class FKhachHang_DAL
+    public class FMonAn_DAL
     {
-        FXuLy_DAL xuLy = new FXuLy_DAL();
-        public List<FKhachHang_DTO> Top1()
+        FXuLy_DAL xuly = new FXuLy_DAL();
+        public List<FMonAn_DTO> select()
         {
+            List<FMonAn_DTO> listMonAn = new List<FMonAn_DTO>();
             string query = String.Empty;
-            query += "select TOP 1 [MaKH] from [KHACHHANG] order by [MAKH] desc";
-            List<FKhachHang_DTO> listkh = new List<FKhachHang_DTO>();
-
-            using (SqlConnection con = new SqlConnection(xuLy.ConnectionString))
+            query += "select [MaMonAn], [Ten],[DonGia] from [MONAN]";
+            using (SqlConnection con = new SqlConnection(xuly.ConnectionString))
             {
-
                 using (SqlCommand cmd = new SqlCommand())
                 {
                     cmd.Connection = con;
-                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandType = CommandType.Text;
                     cmd.CommandText = query;
-
                     try
                     {
                         con.Open();
@@ -36,23 +33,24 @@ namespace DAL
                         {
                             while (reader.Read())
                             {
-                                FKhachHang_DTO kn = new FKhachHang_DTO();
-                                kn.maKH = int.Parse(reader["MaKH"].ToString());
-                                listkh.Add(kn);
+                                FMonAn_DTO db = new FMonAn_DTO();
+                                db.maMonAn = int.Parse(reader["MaMonAn"].ToString());
+                                db.ten = reader["Ten"].ToString();
+                                db.donGia = int.Parse(reader["DonGia"].ToString());
+                                listMonAn.Add(db);
                             }
                         }
-
                         con.Close();
                         con.Dispose();
                     }
                     catch (Exception ex)
                     {
                         con.Close();
-                        return null;
+                        con.Dispose();
                     }
                 }
+                return listMonAn;
             }
-            return listkh;
         }
     }
 }

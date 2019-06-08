@@ -8,9 +8,13 @@ namespace DTO
 {
     public class FMenu_DTO
     {
-        private string maMenu { get; set; }
-        private int donGia { get; set; }
-        private int maHD { get; set; }
-        private string ghiChu { get; set; }
+        public string maHDfake;
+
+        public int maMenu { get; set; }
+        public int maHD { get; set; }
+        public string tenMonAn { get; set; }
+        // Them biến tạm để lấy khóa phụ
+        public int maKHFake { get; set; }
+
     }
 }
