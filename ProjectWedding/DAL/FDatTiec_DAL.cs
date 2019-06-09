@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DAL
 {
-    class FDatTiec_DAL
+    public class FDatTiec_DAL
     {
     }
 }
