@@ -36,7 +36,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.tbGhiChu = new System.Windows.Forms.TextBox();
-            this.cbLoai = new System.Windows.Forms.ComboBox();
             this.tbDonGia = new System.Windows.Forms.TextBox();
             this.tbSLBan = new System.Windows.Forms.TextBox();
             this.tbTen = new System.Windows.Forms.TextBox();
@@ -44,6 +43,8 @@
             this.btSua = new System.Windows.Forms.Button();
             this.btXoa = new System.Windows.Forms.Button();
             this.btThem = new System.Windows.Forms.Button();
+            this.label6 = new System.Windows.Forms.Label();
+            this.cbLoai = new System.Windows.Forms.ComboBox();
             ((System.ComponentModel.ISupportInitialize)(this.gridSanh)).BeginInit();
             this.SuspendLayout();
             // 
@@ -74,6 +75,7 @@
             this.gridSanh.RowTemplate.Height = 24;
             this.gridSanh.Size = new System.Drawing.Size(1020, 185);
             this.gridSanh.TabIndex = 21;
+            this.gridSanh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gridSanh_CellClick);
             // 
             // label5
             // 
@@ -126,20 +128,6 @@
             this.tbGhiChu.Name = "tbGhiChu";
             this.tbGhiChu.Size = new System.Drawing.Size(653, 22);
             this.tbGhiChu.TabIndex = 26;
-            // 
-            // cbLoai
-            // 
-            this.cbLoai.FormattingEnabled = true;
-            this.cbLoai.Items.AddRange(new object[] {
-            "A",
-            "B",
-            "C",
-            "D",
-            "E"});
-            this.cbLoai.Location = new System.Drawing.Point(401, 60);
-            this.cbLoai.Name = "cbLoai";
-            this.cbLoai.Size = new System.Drawing.Size(48, 24);
-            this.cbLoai.TabIndex = 25;
             // 
             // tbDonGia
             // 
@@ -202,11 +190,35 @@
             this.btThem.UseVisualStyleBackColor = true;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(9, 69);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(0, 17);
+            this.label6.TabIndex = 36;
+            this.label6.Visible = false;
+            // 
+            // cbLoai
+            // 
+            this.cbLoai.FormattingEnabled = true;
+            this.cbLoai.Items.AddRange(new object[] {
+            "A",
+            "B",
+            "C",
+            "D",
+            "E"});
+            this.cbLoai.Location = new System.Drawing.Point(401, 60);
+            this.cbLoai.Name = "cbLoai";
+            this.cbLoai.Size = new System.Drawing.Size(48, 24);
+            this.cbLoai.TabIndex = 25;
+            // 
             // FSanh
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1067, 539);
+            this.Controls.Add(this.label6);
             this.Controls.Add(this.btTroGiup);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btXoa);
@@ -245,7 +257,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox tbGhiChu;
-        private System.Windows.Forms.ComboBox cbLoai;
         private System.Windows.Forms.TextBox tbDonGia;
         private System.Windows.Forms.TextBox tbSLBan;
         private System.Windows.Forms.TextBox tbTen;
@@ -253,5 +264,7 @@
         private System.Windows.Forms.Button btSua;
         private System.Windows.Forms.Button btXoa;
         private System.Windows.Forms.Button btThem;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.ComboBox cbLoai;
     }
 }

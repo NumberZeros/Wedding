@@ -26,5 +26,18 @@ namespace BUS
             bool kq = xl.Command(query);
             return kq;
         }
+
+        public bool delete(FSanh_DTO sanhDTO)
+        {
+            string query = "delete from Sanh where MaSanh='"+sanhDTO.maSanh+"'";
+            bool kq = xl.Command(query);
+           return kq;
+        }
+
+        public bool Update(FSanh_DTO sanhDTO)
+        {
+            bool kq = sanhDAL.sua(sanhDTO);
+            return kq;
+        }
     }
 }
