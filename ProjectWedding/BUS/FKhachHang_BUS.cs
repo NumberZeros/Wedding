@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DTO;
 using DAL;
+using System.Data;
 
 namespace BUS
 {
@@ -24,6 +25,11 @@ namespace BUS
         public List<FKhachHang_DTO> Makh()
         {
             return khDAL.Top1();
+        }
+
+        public List<FKhachHang_DTO> selectListTop1()
+        {
+            return khDAL.ListTop1();
         }
     }
 }

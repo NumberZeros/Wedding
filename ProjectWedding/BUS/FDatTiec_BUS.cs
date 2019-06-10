@@ -11,6 +11,7 @@ namespace BUS
     public class FDatTiec_BUS
     {
         FXuLy_DAL xuLy = new FXuLy_DAL();
+        FDatTiec_DAL datTiecDAL = new FDatTiec_DAL();
         public bool Add(FDatTiec_DTO datTiecDTO)
         {
             string query = String.Empty;
@@ -20,6 +21,11 @@ namespace BUS
             query += "(select MaKH from KHACHHANG WHERE TenCR='" + datTiecDTO.tenCRFake + "' and TenCD='" + datTiecDTO.tenCDFake + "'))";
             bool kq= xuLy.Command(query);
             return kq;
+        }
+
+        public List<FDatTiec_DTO> SelectTop1()
+        {
+            return datTiecDAL.SelectTop1();
         }
     }
 }

@@ -93,6 +93,26 @@ namespace ProjectWedding.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap add1 {
+            get {
+                object obj = ResourceManager.GetObject("add1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap add2 {
+            get {
+                object obj = ResourceManager.GetObject("add2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap back_arrow {
             get {
                 object obj = ResourceManager.GetObject("back-arrow", resourceCulture);
@@ -103,9 +123,49 @@ namespace ProjectWedding.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap bill {
+            get {
+                object obj = ResourceManager.GetObject("bill", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap bills {
             get {
                 object obj = ResourceManager.GetObject("bills", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap clear {
+            get {
+                object obj = ResourceManager.GetObject("clear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap couple {
+            get {
+                object obj = ResourceManager.GetObject("couple", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap dattiec {
+            get {
+                object obj = ResourceManager.GetObject("dattiec", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -126,6 +186,26 @@ namespace ProjectWedding.Properties {
         internal static System.Drawing.Bitmap food_and_restaurant {
             get {
                 object obj = ResourceManager.GetObject("food-and-restaurant", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap HoaDon {
+            get {
+                object obj = ResourceManager.GetObject("HoaDon", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icon_couple {
+            get {
+                object obj = ResourceManager.GetObject("icon_couple", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -156,6 +236,16 @@ namespace ProjectWedding.Properties {
         internal static System.Drawing.Bitmap left_arrow_1_ {
             get {
                 object obj = ResourceManager.GetObject("left-arrow(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap lobby {
+            get {
+                object obj = ResourceManager.GetObject("lobby", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -283,6 +373,16 @@ namespace ProjectWedding.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap question_1 {
+            get {
+                object obj = ResourceManager.GetObject("question-1", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap search {
             get {
                 object obj = ResourceManager.GetObject("search", resourceCulture);
@@ -306,6 +406,16 @@ namespace ProjectWedding.Properties {
         internal static System.Drawing.Bitmap statistics_1_ {
             get {
                 object obj = ResourceManager.GetObject("statistics(1)", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap updated {
+            get {
+                object obj = ResourceManager.GetObject("updated", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

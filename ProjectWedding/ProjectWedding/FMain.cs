@@ -63,5 +63,6 @@ namespace ProjectWedding
             this.Hide();
             sanh.Show();
         }
+
     }
 }

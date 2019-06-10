@@ -283,5 +283,38 @@
   <ItemGroup>
     <None Include="Resources\Main2.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\HoaDon.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\bill.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dattiec.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\couple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\icon_couple.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\lobby.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add2.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\clear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\updated.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\question-1.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

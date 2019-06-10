@@ -107,6 +107,8 @@
             // flowLayoutPanel1
             // 
             this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackgroundImage = global::ProjectWedding.Properties.Resources.bill;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 132);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
             this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 593);
@@ -127,9 +129,9 @@
             // 
             this.cbMaKH.Enabled = false;
             this.cbMaKH.FormattingEnabled = true;
-            this.cbMaKH.Location = new System.Drawing.Point(717, 50);
+            this.cbMaKH.Location = new System.Drawing.Point(1411, 50);
             this.cbMaKH.Name = "cbMaKH";
-            this.cbMaKH.Size = new System.Drawing.Size(121, 24);
+            this.cbMaKH.Size = new System.Drawing.Size(10, 24);
             this.cbMaKH.TabIndex = 11;
             this.cbMaKH.Visible = false;
             // 
@@ -138,6 +140,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
+            this.BackgroundImage = global::ProjectWedding.Properties.Resources.bill;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1430, 803);
             this.Controls.Add(this.cbMaKH);
             this.Controls.Add(this.flowLayoutPanel1);

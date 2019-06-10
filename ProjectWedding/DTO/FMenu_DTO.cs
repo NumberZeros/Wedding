@@ -15,6 +15,8 @@ namespace DTO
         public string tenMonAn { get; set; }
         // Them biến tạm để lấy khóa phụ
         public int maKHFake { get; set; }
+        public string tenFake { get; set; }
+        public int donGiaFake { get; set; }
 
     }
 }

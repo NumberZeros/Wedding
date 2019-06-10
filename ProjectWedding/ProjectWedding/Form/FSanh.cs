@@ -99,7 +99,7 @@ namespace ProjectWedding
         {
             sanhDTO.maSanh = int.Parse(label6.Text);
             sanhDTO.tenSanh = tbTen.Text;
-            sanhDTO.loaiSanh = cbLoai.Text;
+            sanhDTO.loaiSanh = tbLoaiSanh.Text;
             sanhDTO.soluongMax = int.Parse(tbSLBan.Text);
             sanhDTO.donGiaMin = int.Parse(tbDonGia.Text);
             sanhDTO.ghiChu = tbGhiChu.Text;
@@ -146,7 +146,7 @@ namespace ProjectWedding
         private void btThem_Click(object sender, EventArgs e)
         {
             sanhDTO.tenSanh = tbTen.Text;
-            sanhDTO.loaiSanh = cbLoai.Text;
+            sanhDTO.loaiSanh = tbLoaiSanh.Text;
             sanhDTO.soluongMax = int.Parse(tbSLBan.Text);
             sanhDTO.donGiaMin = int.Parse(tbDonGia.Text);
             sanhDTO.ghiChu = tbGhiChu.Text;
@@ -168,7 +168,7 @@ namespace ProjectWedding
             DataGridViewRow row = gridSanh.Rows[indexRow];
             label6.Text = row.Cells[0].Value.ToString();
             tbTen.Text = row.Cells[1].Value.ToString();
-            cbLoai.Text = row.Cells[2].Value.ToString();
+            tbLoaiSanh.Text = row.Cells[2].Value.ToString();
             tbSLBan.Text = row.Cells[3].Value.ToString();
             tbDonGia.Text = row.Cells[4].Value.ToString();
             tbGhiChu.Text = row.Cells[5].Value.ToString();

@@ -37,5 +37,10 @@ namespace BUS
             query += "delete from Menu where MaMenu=(select top 1 MaMenu from Menu order by MaMenu desc)";
             xuly.Command(query);
         }
+
+        public List<FMenu_DTO> selectTop1()
+        {
+           return menuDAL.selectTop1();
+        }
     }
 }
