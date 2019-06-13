@@ -55,15 +55,6 @@ namespace ProjectWedding
         // kiểm tra lại những thông tin của khách hàng có hợp lệ hay không 
         // khi thông tin đã hoàn toàn hợp lệ sẽ chuyển sang bước chọn menu
 
-        private void btDatTiec_Click(object sender, EventArgs e)
-        {
-            FMain main = new FMain();
-            MessageBox.Show("Dat tiec thanh cong");
-            this.Hide();
-            this.Close();
-            main.Show();
-        }
-
         // load loại sảnh lên bảng đặt tiệc sau đó trả về mã sảnh
         private void LoadLoaiSanh()
         {

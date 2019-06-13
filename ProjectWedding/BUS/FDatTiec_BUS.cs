@@ -15,6 +15,7 @@ namespace BUS
         public bool Add(FDatTiec_DTO datTiecDTO)
         {
             string query = String.Empty;
+            query += "set dateformat DMY ";
             query += "insert into DATTIEC(NgayDT,Ca,TienDC,SLBan,MaSanh,MaKH) values('"+datTiecDTO.ngayDT+"',";
             query += "'"+datTiecDTO.ca+"','" + datTiecDTO.tienDC + "','" + datTiecDTO.slBan + "',";
             query += "'" + datTiecDTO.loaiSanhFake + "',";

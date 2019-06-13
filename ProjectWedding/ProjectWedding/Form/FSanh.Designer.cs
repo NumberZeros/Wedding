@@ -58,7 +58,7 @@
             this.btsReturn.Location = new System.Drawing.Point(12, 12);
             this.btsReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btsReturn.Name = "btsReturn";
-            this.btsReturn.Size = new System.Drawing.Size(100, 32);
+            this.btsReturn.Size = new System.Drawing.Size(124, 32);
             this.btsReturn.TabIndex = 0;
             this.btsReturn.Text = "Return";
             this.btsReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -168,7 +168,7 @@
             this.btTroGiup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btTroGiup.Location = new System.Drawing.Point(1200, 292);
             this.btTroGiup.Name = "btTroGiup";
-            this.btTroGiup.Size = new System.Drawing.Size(117, 50);
+            this.btTroGiup.Size = new System.Drawing.Size(138, 50);
             this.btTroGiup.TabIndex = 35;
             this.btTroGiup.Text = "Trợ Giúp";
             this.btTroGiup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -182,7 +182,7 @@
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSua.Location = new System.Drawing.Point(891, 292);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(74, 50);
+            this.btSua.Size = new System.Drawing.Size(96, 50);
             this.btSua.TabIndex = 34;
             this.btSua.Text = "Sửa";
             this.btSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -196,7 +196,7 @@
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btXoa.Location = new System.Drawing.Point(547, 292);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(83, 50);
+            this.btXoa.Size = new System.Drawing.Size(94, 50);
             this.btXoa.TabIndex = 33;
             this.btXoa.Text = "Xoá";
             this.btXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -210,7 +210,7 @@
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btThem.Location = new System.Drawing.Point(179, 292);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(100, 50);
+            this.btThem.Size = new System.Drawing.Size(122, 50);
             this.btThem.TabIndex = 32;
             this.btThem.Text = "Thêm";
             this.btThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;

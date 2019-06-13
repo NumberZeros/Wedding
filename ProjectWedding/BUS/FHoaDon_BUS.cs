@@ -15,6 +15,7 @@ namespace BUS
         public void Add(FHoaDon_DTO hoadonDTO)
         {
             string query = String.Empty;
+            query += "set dateformat DMY ";
             query += "insert into HOADON(NgayThanhToan,MaSanh,maKH) values('" + hoadonDTO.ngayThanhToan + "',";
             query += "'" + hoadonDTO.loaiSanhFake + "',";
             query += "(select MaKH from KHACHHANG WHERE TenCR='" + hoadonDTO.tenCRFake + "' and TenCD='" + hoadonDTO.tenCDFake + "'))";

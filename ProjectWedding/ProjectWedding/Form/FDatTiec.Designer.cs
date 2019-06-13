@@ -165,6 +165,7 @@
             // NgayDT
             // 
             this.NgayDT.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.NgayDT.CustomFormat = "MM-dd-yyyy";
             this.NgayDT.Location = new System.Drawing.Point(539, 619);
             this.NgayDT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.NgayDT.Name = "NgayDT";
@@ -290,6 +291,7 @@
             // ngayTT
             // 
             this.ngayTT.CalendarFont = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.ngayTT.CustomFormat = "MM-dd-yyyy";
             this.ngayTT.Location = new System.Drawing.Point(539, 681);
             this.ngayTT.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.ngayTT.Name = "ngayTT";
@@ -311,7 +313,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProjectWedding.Properties.Resources.bill;
+            this.BackgroundImage = global::ProjectWedding.Properties.Resources.dattiec;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1405, 768);
             this.Controls.Add(this.label10);

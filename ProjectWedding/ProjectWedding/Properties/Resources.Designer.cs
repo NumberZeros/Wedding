@@ -313,6 +313,16 @@ namespace ProjectWedding.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap love_you_2198772_1280 {
+            get {
+                object obj = ResourceManager.GetObject("love-you-2198772_1280", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap MagnetStreet_PinkMarble_1920x1080 {
             get {
                 object obj = ResourceManager.GetObject("MagnetStreet_PinkMarble_1920x1080", resourceCulture);

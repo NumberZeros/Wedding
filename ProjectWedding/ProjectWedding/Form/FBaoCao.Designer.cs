@@ -28,16 +28,22 @@
         /// </summary>
         private void InitializeComponent()
         {
+            DevExpress.XtraCharts.XYDiagram3D xyDiagram3D2 = new DevExpress.XtraCharts.XYDiagram3D();
+            DevExpress.XtraCharts.Series series3 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView4 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
+            DevExpress.XtraCharts.Series series4 = new DevExpress.XtraCharts.Series();
+            DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView5 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
+            DevExpress.XtraCharts.SideBySideBar3DSeriesView sideBySideBar3DSeriesView6 = new DevExpress.XtraCharts.SideBySideBar3DSeriesView();
             this.btbcReturn = new System.Windows.Forms.Button();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.dataGridView1 = new System.Windows.Forms.DataGridView();
             this.button1 = new System.Windows.Forms.Button();
-            this.btXemBaoCao = new System.Windows.Forms.Button();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.chartThang = new DevExpress.XtraCharts.ChartControl();
+            ((System.ComponentModel.ISupportInitialize)(this.chartThang)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3D2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView6)).BeginInit();
             this.SuspendLayout();
             // 
             // btbcReturn
@@ -47,76 +53,15 @@
             this.btbcReturn.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btbcReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.btbcReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btbcReturn.Location = new System.Drawing.Point(9, 10);
-            this.btbcReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btbcReturn.Location = new System.Drawing.Point(12, 12);
+            this.btbcReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btbcReturn.Name = "btbcReturn";
-            this.btbcReturn.Size = new System.Drawing.Size(72, 29);
+            this.btbcReturn.Size = new System.Drawing.Size(96, 36);
             this.btbcReturn.TabIndex = 0;
             this.btbcReturn.Text = "Return";
             this.btbcReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btbcReturn.UseVisualStyleBackColor = false;
             this.btbcReturn.Click += new System.EventHandler(this.btbcReturn_Click);
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Times New Roman", 27F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Italic))));
-            this.label1.ForeColor = System.Drawing.Color.Red;
-            this.label1.Location = new System.Drawing.Point(177, 10);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 41);
-            this.label1.TabIndex = 1;
-            this.label1.Text = "Báo Cáo Tháng";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.BackColor = System.Drawing.Color.Transparent;
-            this.label2.Location = new System.Drawing.Point(130, 74);
-            this.label2.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(41, 13);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Tháng:";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(175, 71);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(159, 20);
-            this.textBox1.TabIndex = 3;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(220, 106);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(2);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(188, 20);
-            this.textBox2.TabIndex = 5;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.BackColor = System.Drawing.Color.Transparent;
-            this.label3.Location = new System.Drawing.Point(130, 113);
-            this.label3.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(86, 13);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Tổng doanh thu:";
-            // 
-            // dataGridView1
-            // 
-            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView1.Location = new System.Drawing.Point(21, 163);
-            this.dataGridView1.Margin = new System.Windows.Forms.Padding(2);
-            this.dataGridView1.Name = "dataGridView1";
-            this.dataGridView1.RowTemplate.Height = 24;
-            this.dataGridView1.Size = new System.Drawing.Size(560, 167);
-            this.dataGridView1.TabIndex = 6;
             // 
             // button1
             // 
@@ -124,64 +69,64 @@
             this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.button1.Image = global::ProjectWedding.Properties.Resources.login_square_arrow_button_outline;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(521, 12);
-            this.button1.Margin = new System.Windows.Forms.Padding(2);
+            this.button1.Location = new System.Drawing.Point(1303, 15);
+            this.button1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(60, 27);
+            this.button1.Size = new System.Drawing.Size(80, 33);
             this.button1.TabIndex = 7;
             this.button1.Text = "Exit";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.button1.UseVisualStyleBackColor = false;
             this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
-            // btXemBaoCao
-            //Thêm nút xem báo cáo 
+            // chartThang
             // 
-            this.btXemBaoCao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btXemBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btXemBaoCao.Location = new System.Drawing.Point(339, 70);
-            this.btXemBaoCao.Name = "btXemBaoCao";
-            this.btXemBaoCao.Size = new System.Drawing.Size(69, 22);
-            this.btXemBaoCao.TabIndex = 8;
-            this.btXemBaoCao.Text = "Xem";
-            this.btXemBaoCao.UseVisualStyleBackColor = false;
+            xyDiagram3D2.RotationMatrixSerializable = "0.766044443118978;-0.219846310392954;0.604022773555054;0;0;0.939692620785908;0.34" +
+    "2020143325669;0;-0.642787609686539;-0.262002630229385;0.719846310392954;0;0;0;0;" +
+    "1";
+            this.chartThang.Diagram = xyDiagram3D2;
+            this.chartThang.Location = new System.Drawing.Point(193, 15);
+            this.chartThang.Name = "chartThang";
+            series3.Name = "Series 1";
+            series3.View = sideBySideBar3DSeriesView4;
+            series4.Name = "Series 2";
+            series4.View = sideBySideBar3DSeriesView5;
+            this.chartThang.SeriesSerializable = new DevExpress.XtraCharts.Series[] {
+        series3,
+        series4};
+            this.chartThang.SeriesTemplate.View = sideBySideBar3DSeriesView6;
+            this.chartThang.Size = new System.Drawing.Size(1036, 707);
+            this.chartThang.TabIndex = 8;
             // 
             // FBaoCao
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;
-            this.ClientSize = new System.Drawing.Size(600, 366);
-            this.Controls.Add(this.btXemBaoCao);
+            this.ClientSize = new System.Drawing.Size(1393, 777);
+            this.Controls.Add(this.chartThang);
             this.Controls.Add(this.button1);
-            this.Controls.Add(this.dataGridView1);
-            this.Controls.Add(this.textBox2);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.label1);
             this.Controls.Add(this.btbcReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FBaoCao";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FBaoCao";
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(xyDiagram3D2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(series4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(sideBySideBar3DSeriesView6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.chartThang)).EndInit();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btbcReturn;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.DataGridView dataGridView1;
         private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button btXemBaoCao;
+        private DevExpress.XtraCharts.ChartControl chartThang;
     }
 }
