@@ -59,7 +59,7 @@
             // 
             // btUndo
             // 
-            this.btUndo.Location = new System.Drawing.Point(556, 287);
+            this.btUndo.Location = new System.Drawing.Point(571, 289);
             this.btUndo.Name = "btUndo";
             this.btUndo.Size = new System.Drawing.Size(127, 86);
             this.btUndo.TabIndex = 0;
@@ -129,9 +129,9 @@
             // 
             this.cbMaKH.Enabled = false;
             this.cbMaKH.FormattingEnabled = true;
-            this.cbMaKH.Location = new System.Drawing.Point(1411, 50);
+            this.cbMaKH.Location = new System.Drawing.Point(1320, 50);
             this.cbMaKH.Name = "cbMaKH";
-            this.cbMaKH.Size = new System.Drawing.Size(10, 24);
+            this.cbMaKH.Size = new System.Drawing.Size(101, 24);
             this.cbMaKH.TabIndex = 11;
             this.cbMaKH.Visible = false;
             // 
