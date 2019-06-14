@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,10 +14,19 @@ namespace ProjectWedding
 {
     public partial class FLogin : Form
     {
+        
         public FLogin()
         {
+            //Thread t = new Thread(new ThreadStart(StartForm));
+            //t.Start();
+            //Thread.Sleep(3000);
             InitializeComponent();
+            //t.Abort();
         }
+        //public void StartForm()
+        //{
+        //    Application.Run(new SplashScreen());
+        //}
 
 
         // tạo quyền đăng nhập vào chương trình

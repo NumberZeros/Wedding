@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,9 +13,18 @@ namespace ProjectWedding
 {
     public partial class FMain : Form
     {
+        //them cai man hinh SplashScreen (ten ban dau la Waitform) vo day vi hinh nhu bo Flogin r phai hom?
         public FMain()
         {
+            Thread t = new Thread(new ThreadStart(StartForm));
+            t.Start();
+            Thread.Sleep(3000);
             InitializeComponent();
+            t.Abort();
+        }
+        public void StartForm()
+        {
+            Application.Run(new SplashScreen());
         }
 
         private void btReturn_Click(object sender, EventArgs e)
