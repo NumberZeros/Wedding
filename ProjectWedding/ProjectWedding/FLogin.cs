@@ -60,12 +60,13 @@ namespace ProjectWedding
             }
             return 0;
         }
-
+        public static string SelectedText = ""; //khai báo SelectedText để dùng
         private void btLogin_Click(object sender, EventArgs e)
         {
             FMain main = new FMain();
             if(CheckAccount()==1)
             {
+                SelectedText = tbAccount.Text; //lấy teowr tbAccount truyền vô string SelectedText
                 this.Hide();
                 main.Show();
             }

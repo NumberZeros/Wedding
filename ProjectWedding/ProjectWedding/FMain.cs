@@ -13,12 +13,13 @@ namespace ProjectWedding
 {
     public partial class FMain : Form
     {
-        //them cai man hinh SplashScreen (ten ban dau la Waitform) vo day vi hinh nhu bo Flogin r phai hom?
+        //thêm cai man hinh SplashScreen (tên ban đầu là Waitform), lúc đầu làm vô Flogin mà chạy vô đây nên thoi làm vô đây chạy thử
+        //muốn thì dời code lại qua bên FLogin (nếu cho chạy FLogin lúc vô đầu)
         public FMain()
         {
             Thread t = new Thread(new ThreadStart(StartForm));
             t.Start();
-            Thread.Sleep(3000);
+            Thread.Sleep(5000);
             InitializeComponent();
             t.Abort();
         }
@@ -74,5 +75,15 @@ namespace ProjectWedding
             sanh.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //load text từ FLogin vô cái lblRole ở dưới hình người dùng để biết user hay admin
+        private void FMain_Load(object sender, EventArgs e)
+        {
+            lblRole.Text = FLogin.SelectedText;
+        }
     }
 }
