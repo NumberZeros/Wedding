@@ -72,7 +72,9 @@ namespace ProjectWedding
             }
             else
             {
-                Application.Restart();
+                DialogResult dialog= MessageBox.Show("Error", "Thông tin nhập sai mời bạn thử lại", MessageBoxButtons.OK); //messageBox khi nhập sai
+                if(dialog==DialogResult.OK)
+                    Application.Restart();
             }
         }
 
