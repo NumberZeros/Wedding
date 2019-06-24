@@ -91,6 +91,10 @@ namespace ProjectWedding
         private void FSanh_Load(object sender, EventArgs e)
         {
             LoadSanh();
+            //disable 3 nút
+            btThem.Enabled = false;
+            btSua.Enabled = false;
+            btXoa.Enabled = false;
 
         }
 
@@ -118,7 +122,10 @@ namespace ProjectWedding
 
         private void btTroGiup_Click(object sender, EventArgs e)
         {
-
+            //enable 3 nút 
+            btThem.Enabled = true;
+            btSua.Enabled = true;
+            btXoa.Enabled = true;
         }
 
         private void btXoa_Click(object sender, EventArgs e)

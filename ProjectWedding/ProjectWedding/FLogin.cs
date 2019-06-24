@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -13,10 +14,19 @@ namespace ProjectWedding
 {
     public partial class FLogin : Form
     {
+        
         public FLogin()
         {
+            //Thread t = new Thread(new ThreadStart(StartForm));
+            //t.Start();
+            //Thread.Sleep(3000);
             InitializeComponent();
+            //t.Abort();
         }
+        //public void StartForm()
+        //{
+        //    Application.Run(new SplashScreen());
+        //}
 
 
         // tạo quyền đăng nhập vào chương trình
@@ -50,18 +60,21 @@ namespace ProjectWedding
             }
             return 0;
         }
-
+        public static string SelectedText = ""; //khai báo SelectedText để dùng
         private void btLogin_Click(object sender, EventArgs e)
         {
             FMain main = new FMain();
             if(CheckAccount()==1)
             {
+                SelectedText = tbAccount.Text; //lấy teowr tbAccount truyền vô string SelectedText
                 this.Hide();
                 main.Show();
             }
             else
             {
-                Application.Restart();
+                DialogResult dialog= MessageBox.Show("Error", "Thông tin nhập sai mời bạn thử lại", MessageBoxButtons.OK); //messageBox khi nhập sai
+                if(dialog==DialogResult.OK)
+                    Application.Restart();
             }
         }
 

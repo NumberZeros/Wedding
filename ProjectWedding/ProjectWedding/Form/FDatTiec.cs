@@ -115,6 +115,7 @@ namespace ProjectWedding
         }
 
         // insert dữ liệu vào các bảng
+        //disable textboxes sau khi kiem tra thanh cong
         private void btnCheck_Click(object sender, EventArgs e)
         {
             try
@@ -124,6 +125,16 @@ namespace ProjectWedding
 
                     InsertHoadDon();
                     InsertDatTiec();
+
+                    tbTenCR.Enabled = false;
+                    tbTenCD.Enabled = false;
+                    tbSlBan.Enabled = false;
+                    tbDT.Enabled = false;
+                    tbTienCoc.Enabled = false;
+                    NgayDT.Enabled = false;
+                    cbCa.Enabled = false;
+                    cbSanh.Enabled = false;
+
                 }
             }
             catch(Exception ex)

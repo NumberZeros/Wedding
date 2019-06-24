@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
@@ -12,9 +13,19 @@ namespace ProjectWedding
 {
     public partial class FMain : Form
     {
+        //thêm cai man hinh SplashScreen (tên ban đầu là Waitform), lúc đầu làm vô Flogin mà chạy vô đây nên thoi làm vô đây chạy thử
+        //muốn thì dời code lại qua bên FLogin (nếu cho chạy FLogin lúc vô đầu)
         public FMain()
         {
+            Thread t = new Thread(new ThreadStart(StartForm));
+            t.Start();
+            Thread.Sleep(5000);
             InitializeComponent();
+            t.Abort();
+        }
+        public void StartForm()
+        {
+            Application.Run(new SplashScreen());
         }
 
         private void btReturn_Click(object sender, EventArgs e)
@@ -64,5 +75,15 @@ namespace ProjectWedding
             sanh.Show();
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        //load text từ FLogin vô cái lblRole ở dưới hình người dùng để biết user hay admin
+        private void FMain_Load(object sender, EventArgs e)
+        {
+            lblRole.Text = FLogin.SelectedText;
+        }
     }
 }
