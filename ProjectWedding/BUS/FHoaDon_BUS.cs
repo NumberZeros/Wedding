@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using DTO;
 using DAL;
+using System.Data;
 
 namespace BUS
 {
@@ -20,6 +21,22 @@ namespace BUS
             query += "'" + hoadonDTO.loaiSanhFake + "',";
             query += "(select MaKH from KHACHHANG WHERE TenCR='" + hoadonDTO.tenCRFake + "' and TenCD='" + hoadonDTO.tenCDFake + "'))";
              xuLy.Command(query);
+        }
+
+        public void AddTongTien(FHoaDon_DTO hoadonDTO)
+        {
+            string query = String.Empty;
+            query += "update HOADON set TongTien='"+hoadonDTO.tongTien+"' where maKH='"+hoadonDTO.maKH+"'";
+            xuLy.Command(query);
+        }
+
+        public DataTable GroupHoaDon()
+        {
+
+            string query = String.Empty;
+            query += "select month(ngaythanhtoan) as Thang, COUNT(MaHD) as SoHD from HOADON";
+            query += " where YEAR(ngaythanhtoan) = '2019' group by MONTH(ngaythanhtoan)";
+            return xuLy.select(query);
         }
     }
 }

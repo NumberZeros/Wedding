@@ -17,7 +17,7 @@ namespace ProjectWedding
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            //Application.Run(new FLogin()); // qua qua flogin de kiem tra nhanh hon
+           // Application.Run(new FLogin()); // qua qua flogin de kiem tra nhanh hon
             Application.Run(new FMain());
             //Application.Run(new frmHeThong());
         }

@@ -25,6 +25,7 @@ namespace ProjectWedding
         FMenu_BUS menuBUS = new FMenu_BUS();
 
         FKhachHang_DTO khacHangDTO = new FKhachHang_DTO();
+        FHoaDon_DTO hoaDonDTO = new FHoaDon_DTO();
 
         private void bthdReturn_Click(object sender, EventArgs e)
         {
@@ -37,10 +38,15 @@ namespace ProjectWedding
         private void button1_Click(object sender, EventArgs e)
         {
             FMain main = new FMain();
+            // Them tong tieen vao cho Ban hoa don
+            hoaDonDTO.tongTien = int.Parse(lbTongTien.Text);
+            hoaDonDTO.maKH = int.Parse(btMaKhachHang.Text);
             DialogResult mb;
             mb = MessageBox.Show("Bạn đã kiểm tra lại thông tin và thanh toán ", "Thông Báo", MessageBoxButtons.YesNo);
             if(mb== DialogResult.Yes)
             {
+                //Thong tin hoan toan hop le moi duoc them tong tien
+                hoaDonBUS.AddTongTien(hoaDonDTO);
                 this.Hide();
                 this.Close();
                 main.Show();
