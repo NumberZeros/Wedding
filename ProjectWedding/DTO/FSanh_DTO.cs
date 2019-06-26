@@ -15,6 +15,5 @@ namespace DTO
         public int donGiaMin { get; set; }
         public string ghiChu { get; set; }
         public string maCTDT { get; set; }
-
     }
 }

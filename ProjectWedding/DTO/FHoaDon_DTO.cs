@@ -10,10 +10,12 @@ namespace DTO
     {
         public DateTime ngayDTFacke;
 
-        // thay doi 
         public int maHD { get; set; }
         public DateTime ngayThanhToan { get; set; }
         public int maSanh { get; set; }
+        //Them thuoc tinh tong tien
+        public int tongTien { get; set; }
+        public int maKH { get; set; }
         public string tenCRFake { get; set; }
         public string tenCDFake { get; set; }
         public int loaiSanhFake { get; set; }

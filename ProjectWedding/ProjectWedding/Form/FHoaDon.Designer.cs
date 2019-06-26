@@ -54,8 +54,6 @@
             this.lbCa = new System.Windows.Forms.Label();
             this.dateNgayDT = new System.Windows.Forms.DateTimePicker();
             this.gridAnMonAn = new System.Windows.Forms.DataGridView();
-            this.lbMaHD = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.panelTen = new System.Windows.Forms.FlowLayoutPanel();
             this.panelDonGia = new System.Windows.Forms.FlowLayoutPanel();
             ((System.ComponentModel.ISupportInitialize)(this.gridAnDatTiec)).BeginInit();
@@ -96,7 +94,7 @@
             this.label2.AutoSize = true;
             this.label2.BackColor = System.Drawing.Color.Transparent;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label2.Location = new System.Drawing.Point(71, 275);
+            this.label2.Location = new System.Drawing.Point(79, 230);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(128, 29);
             this.label2.TabIndex = 7;
@@ -107,7 +105,7 @@
             this.label3.AutoSize = true;
             this.label3.BackColor = System.Drawing.Color.Transparent;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label3.Location = new System.Drawing.Point(71, 325);
+            this.label3.Location = new System.Drawing.Point(79, 280);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(134, 29);
             this.label3.TabIndex = 8;
@@ -118,7 +116,7 @@
             this.label4.AutoSize = true;
             this.label4.BackColor = System.Drawing.Color.Transparent;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label4.Location = new System.Drawing.Point(71, 375);
+            this.label4.Location = new System.Drawing.Point(79, 330);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(155, 29);
             this.label4.TabIndex = 9;
@@ -129,7 +127,7 @@
             this.label5.AutoSize = true;
             this.label5.BackColor = System.Drawing.Color.Transparent;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label5.Location = new System.Drawing.Point(71, 475);
+            this.label5.Location = new System.Drawing.Point(79, 430);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(165, 29);
             this.label5.TabIndex = 10;
@@ -140,7 +138,7 @@
             this.label7.AutoSize = true;
             this.label7.BackColor = System.Drawing.Color.Transparent;
             this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label7.Location = new System.Drawing.Point(71, 564);
+            this.label7.Location = new System.Drawing.Point(79, 519);
             this.label7.Name = "label7";
             this.label7.Size = new System.Drawing.Size(208, 29);
             this.label7.TabIndex = 13;
@@ -151,7 +149,7 @@
             this.label8.AutoSize = true;
             this.label8.BackColor = System.Drawing.Color.Transparent;
             this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label8.Location = new System.Drawing.Point(71, 614);
+            this.label8.Location = new System.Drawing.Point(79, 569);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(178, 29);
             this.label8.TabIndex = 14;
@@ -162,7 +160,7 @@
             this.label9.AutoSize = true;
             this.label9.BackColor = System.Drawing.Color.Transparent;
             this.label9.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label9.Location = new System.Drawing.Point(71, 664);
+            this.label9.Location = new System.Drawing.Point(79, 619);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(164, 29);
             this.label9.TabIndex = 15;
@@ -189,7 +187,7 @@
             this.label12.AutoSize = true;
             this.label12.BackColor = System.Drawing.Color.Transparent;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label12.Location = new System.Drawing.Point(71, 425);
+            this.label12.Location = new System.Drawing.Point(79, 380);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(103, 29);
             this.label12.TabIndex = 20;
@@ -200,7 +198,7 @@
             this.lbMaSanh.AutoSize = true;
             this.lbMaSanh.BackColor = System.Drawing.Color.Transparent;
             this.lbMaSanh.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbMaSanh.Location = new System.Drawing.Point(320, 425);
+            this.lbMaSanh.Location = new System.Drawing.Point(328, 380);
             this.lbMaSanh.Name = "lbMaSanh";
             this.lbMaSanh.Size = new System.Drawing.Size(103, 29);
             this.lbMaSanh.TabIndex = 29;
@@ -211,7 +209,7 @@
             this.lbSoTienConLai.AutoSize = true;
             this.lbSoTienConLai.BackColor = System.Drawing.Color.Transparent;
             this.lbSoTienConLai.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbSoTienConLai.Location = new System.Drawing.Point(320, 664);
+            this.lbSoTienConLai.Location = new System.Drawing.Point(328, 619);
             this.lbSoTienConLai.Name = "lbSoTienConLai";
             this.lbSoTienConLai.Size = new System.Drawing.Size(164, 29);
             this.lbSoTienConLai.TabIndex = 28;
@@ -222,7 +220,7 @@
             this.lbTienDatCoc.AutoSize = true;
             this.lbTienDatCoc.BackColor = System.Drawing.Color.Transparent;
             this.lbTienDatCoc.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTienDatCoc.Location = new System.Drawing.Point(320, 614);
+            this.lbTienDatCoc.Location = new System.Drawing.Point(328, 569);
             this.lbTienDatCoc.Name = "lbTienDatCoc";
             this.lbTienDatCoc.Size = new System.Drawing.Size(178, 29);
             this.lbTienDatCoc.TabIndex = 27;
@@ -233,7 +231,7 @@
             this.lbTongTien.AutoSize = true;
             this.lbTongTien.BackColor = System.Drawing.Color.Transparent;
             this.lbTongTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTongTien.Location = new System.Drawing.Point(320, 564);
+            this.lbTongTien.Location = new System.Drawing.Point(328, 519);
             this.lbTongTien.Name = "lbTongTien";
             this.lbTongTien.Size = new System.Drawing.Size(208, 29);
             this.lbTongTien.TabIndex = 26;
@@ -244,7 +242,7 @@
             this.lbSLBan.AutoSize = true;
             this.lbSLBan.BackColor = System.Drawing.Color.Transparent;
             this.lbSLBan.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbSLBan.Location = new System.Drawing.Point(320, 375);
+            this.lbSLBan.Location = new System.Drawing.Point(328, 330);
             this.lbSLBan.Name = "lbSLBan";
             this.lbSLBan.Size = new System.Drawing.Size(155, 29);
             this.lbSLBan.TabIndex = 23;
@@ -255,7 +253,7 @@
             this.lbTenCD.AutoSize = true;
             this.lbTenCD.BackColor = System.Drawing.Color.Transparent;
             this.lbTenCD.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTenCD.Location = new System.Drawing.Point(320, 325);
+            this.lbTenCD.Location = new System.Drawing.Point(328, 280);
             this.lbTenCD.Name = "lbTenCD";
             this.lbTenCD.Size = new System.Drawing.Size(134, 29);
             this.lbTenCD.TabIndex = 22;
@@ -266,7 +264,7 @@
             this.lbTenCR.AutoSize = true;
             this.lbTenCR.BackColor = System.Drawing.Color.Transparent;
             this.lbTenCR.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbTenCR.Location = new System.Drawing.Point(320, 275);
+            this.lbTenCR.Location = new System.Drawing.Point(328, 230);
             this.lbTenCR.Name = "lbTenCR";
             this.lbTenCR.Size = new System.Drawing.Size(128, 29);
             this.lbTenCR.TabIndex = 21;
@@ -324,7 +322,7 @@
             this.label10.AutoSize = true;
             this.label10.BackColor = System.Drawing.Color.Transparent;
             this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label10.Location = new System.Drawing.Point(71, 522);
+            this.label10.Location = new System.Drawing.Point(79, 477);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(139, 29);
             this.label10.TabIndex = 36;
@@ -335,7 +333,7 @@
             this.lbCa.AutoSize = true;
             this.lbCa.BackColor = System.Drawing.Color.Transparent;
             this.lbCa.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbCa.Location = new System.Drawing.Point(320, 522);
+            this.lbCa.Location = new System.Drawing.Point(328, 477);
             this.lbCa.Name = "lbCa";
             this.lbCa.Size = new System.Drawing.Size(139, 29);
             this.lbCa.TabIndex = 38;
@@ -344,7 +342,7 @@
             // dateNgayDT
             // 
             this.dateNgayDT.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateNgayDT.Location = new System.Drawing.Point(325, 474);
+            this.dateNgayDT.Location = new System.Drawing.Point(333, 429);
             this.dateNgayDT.Name = "dateNgayDT";
             this.dateNgayDT.Size = new System.Drawing.Size(296, 30);
             this.dateNgayDT.TabIndex = 39;
@@ -358,28 +356,6 @@
             this.gridAnMonAn.Size = new System.Drawing.Size(458, 150);
             this.gridAnMonAn.TabIndex = 40;
             this.gridAnMonAn.Visible = false;
-            // 
-            // lbMaHD
-            // 
-            this.lbMaHD.AutoSize = true;
-            this.lbMaHD.BackColor = System.Drawing.Color.Transparent;
-            this.lbMaHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.lbMaHD.Location = new System.Drawing.Point(320, 230);
-            this.lbMaHD.Name = "lbMaHD";
-            this.lbMaHD.Size = new System.Drawing.Size(139, 29);
-            this.lbMaHD.TabIndex = 42;
-            this.lbMaHD.Text = "Mã hóa đơn";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.BackColor = System.Drawing.Color.Transparent;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
-            this.label11.Location = new System.Drawing.Point(71, 230);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(139, 29);
-            this.label11.TabIndex = 41;
-            this.label11.Text = "Mã hóa đơn";
             // 
             // panelTen
             // 
@@ -406,8 +382,6 @@
             this.ClientSize = new System.Drawing.Size(1305, 780);
             this.Controls.Add(this.panelDonGia);
             this.Controls.Add(this.panelTen);
-            this.Controls.Add(this.lbMaHD);
-            this.Controls.Add(this.label11);
             this.Controls.Add(this.gridAnMonAn);
             this.Controls.Add(this.dateNgayDT);
             this.Controls.Add(this.lbCa);
@@ -476,8 +450,6 @@
         private System.Windows.Forms.Label lbCa;
         private System.Windows.Forms.DateTimePicker dateNgayDT;
         private System.Windows.Forms.DataGridView gridAnMonAn;
-        private System.Windows.Forms.Label lbMaHD;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.FlowLayoutPanel panelTen;
         private System.Windows.Forms.FlowLayoutPanel panelDonGia;
     }

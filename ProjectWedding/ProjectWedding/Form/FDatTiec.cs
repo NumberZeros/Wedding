@@ -51,7 +51,6 @@ namespace ProjectWedding
             this.Close();
             hoaDon.Show();
         }
-
         // kiểm tra lại những thông tin của khách hàng có hợp lệ hay không 
         // khi thông tin đã hoàn toàn hợp lệ sẽ chuyển sang bước chọn menu
 
@@ -123,6 +122,7 @@ namespace ProjectWedding
             {
                 if(InsertKhacHang()==true)
                 {
+
                     InsertHoadDon();
                     InsertDatTiec();
 
@@ -144,12 +144,41 @@ namespace ProjectWedding
 
         }
 
+        private void CheckSLMAX()
+        {
+            try
+            {
+                if (int.Parse(tbSlBan.Text) < int.Parse(tbMax.Text))
+                    MessageBox.Show("Moi ban nhap tiep");
+            }
+            catch(Exception ex)
+            {
+                DialogResult re = new DialogResult();
+                re=MessageBox.Show("So luong ban phai nho hon so luong ban toi da", tbMax.Text, MessageBoxButtons.OK);
+                if(re==DialogResult.OK)
+                {
+                    Application.Restart();
+                }
+            }
+        }
 
+        private void BindingSLMax()
+        {
+            List<FSanh_DTO> list= sanhBUS.selectSLMax(sanhDTO);
+            Binding max = new Binding("Text", list, "soluongMax");
+            tbMax.DataBindings.Add(max);
+        }
 
         private void FDatTiec_Load(object sender, EventArgs e)
         {
+            BindingSLMax();
             LoadLoaiSanh();
         }
 
+        private void btCheckMax_Click(object sender, EventArgs e)
+        {
+            
+            CheckSLMAX();
+        }
     }
 }

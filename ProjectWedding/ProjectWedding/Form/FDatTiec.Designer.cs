@@ -51,6 +51,8 @@
             this.cbCa = new System.Windows.Forms.ComboBox();
             this.ngayTT = new System.Windows.Forms.DateTimePicker();
             this.label10 = new System.Windows.Forms.Label();
+            this.tbMax = new System.Windows.Forms.TextBox();
+            this.btCheckMax = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // btdtReturn
@@ -329,11 +331,27 @@
             this.label10.TabIndex = 27;
             this.label10.Text = "Ngày Thanh Toán";
             // 
+            // tbMax
+            // 
+            this.tbMax.Location = new System.Drawing.Point(1293, 12);
+            this.tbMax.Name = "tbMax";
+            this.tbMax.Size = new System.Drawing.Size(100, 22);
+            this.tbMax.TabIndex = 30;
+            // 
+            // btCheckMax
+            // 
+            this.btCheckMax.Location = new System.Drawing.Point(797, 480);
+            this.btCheckMax.Name = "btCheckMax";
+            this.btCheckMax.Size = new System.Drawing.Size(75, 23);
+            this.btCheckMax.TabIndex = 31;
+            this.btCheckMax.Text = "Check";
+            this.btCheckMax.UseVisualStyleBackColor = true;
+            this.btCheckMax.Click += new System.EventHandler(this.btCheckMax_Click);
+            // 
             // FDatTiec
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.BackgroundImage = global::ProjectWedding.Properties.Resources.dattiec;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(1108, 624);
             this.Controls.Add(this.label10);
@@ -395,5 +413,7 @@
         private System.Windows.Forms.ComboBox cbCa;
         private System.Windows.Forms.DateTimePicker ngayTT;
         private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.TextBox tbMax;
+        private System.Windows.Forms.Button btCheckMax;
     }
 }

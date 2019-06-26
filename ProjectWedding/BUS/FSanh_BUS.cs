@@ -39,5 +39,10 @@ namespace BUS
             bool kq = sanhDAL.sua(sanhDTO);
             return kq;
         }
+
+        public List<FSanh_DTO> selectSLMax(FSanh_DTO sanhDTO)
+        {
+            return sanhDAL.selectSLMax(sanhDTO);
+        }
     }
 }
