@@ -192,7 +192,7 @@
             this.lblRole.BackColor = System.Drawing.Color.Transparent;
             this.lblRole.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F);
             this.lblRole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRole.Location = new System.Drawing.Point(394, 91);
+            this.lblRole.Location = new System.Drawing.Point(397, 91);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(70, 25);
             this.lblRole.TabIndex = 22;

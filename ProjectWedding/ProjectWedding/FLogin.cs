@@ -14,19 +14,20 @@ namespace ProjectWedding
 {
     public partial class FLogin : Form
     {
-        
+        //thêm cai man hinh SplashScreen (tên là Waitform)
         public FLogin()
         {
-            //Thread t = new Thread(new ThreadStart(StartForm));
-            //t.Start();
-            //Thread.Sleep(3000);
+            Thread t = new Thread(new ThreadStart(StartForm));
+            t.Start();
+            Thread.Sleep(5000);
             InitializeComponent();
-            //t.Abort();
+            t.Abort();
         }
-        //public void StartForm()
-        //{
-        //    Application.Run(new SplashScreen());
-        //}
+
+        public void StartForm()
+        {
+            Application.Run(new SplashScreen());
+        }
 
 
         // tạo quyền đăng nhập vào chương trình
@@ -63,24 +64,29 @@ namespace ProjectWedding
         public static string SelectedText = ""; //khai báo SelectedText để dùng
         private void btLogin_Click(object sender, EventArgs e)
         {
-            FMain main = new FMain();
-            if(CheckAccount()==1)
-            {
-                SelectedText = tbAccount.Text; //lấy teowr tbAccount truyền vô string SelectedText
-                this.Hide();
-                main.Show();
-            }
-            else
-            {
-                DialogResult dialog= MessageBox.Show("Error", "Thông tin nhập sai mời bạn thử lại", MessageBoxButtons.OK); //messageBox khi nhập sai
-                if(dialog==DialogResult.OK)
-                    Application.Restart();
-            }
+          
         }
 
         private void tbExit_Click(object sender, EventArgs e)
         {
             Application.Exit();
+        }
+
+        private void btLogin_Click_1(object sender, EventArgs e)
+        {
+            FMain main = new FMain();
+            if (CheckAccount() == 1)
+            {
+                SelectedText = tbAccount.Text; //lấy text từ tbAccount truyền vô string SelectedText
+                this.Hide();
+                main.Show();
+            }
+            else
+            {
+                DialogResult dialog = MessageBox.Show("Error", "Thông tin nhập sai mời bạn thử lại", MessageBoxButtons.OK); //messageBox khi nhập sai
+                if (dialog == DialogResult.OK)
+                    Application.Restart();
+            }
         }
     }
 }
