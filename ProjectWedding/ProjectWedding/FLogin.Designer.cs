@@ -30,11 +30,11 @@
         {
             this.tbExit = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.btLogin = new System.Windows.Forms.Button();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
             this.tbPass = new System.Windows.Forms.TextBox();
             this.tbAccount = new System.Windows.Forms.TextBox();
+            this.btLogin = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
@@ -47,10 +47,10 @@
             this.tbExit.Font = new System.Drawing.Font("Microsoft YaHei", 10F);
             this.tbExit.Image = global::ProjectWedding.Properties.Resources.login_square_arrow_button_outline;
             this.tbExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.tbExit.Location = new System.Drawing.Point(425, 11);
-            this.tbExit.Margin = new System.Windows.Forms.Padding(2);
+            this.tbExit.Location = new System.Drawing.Point(567, 14);
+            this.tbExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbExit.Name = "tbExit";
-            this.tbExit.Size = new System.Drawing.Size(83, 39);
+            this.tbExit.Size = new System.Drawing.Size(111, 48);
             this.tbExit.TabIndex = 3;
             this.tbExit.Text = "Exit";
             this.tbExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -64,33 +64,21 @@
             this.panel1.Controls.Add(this.pictureBox1);
             this.panel1.Controls.Add(this.tbPass);
             this.panel1.Controls.Add(this.tbAccount);
-            this.panel1.Location = new System.Drawing.Point(98, 96);
+            this.panel1.Location = new System.Drawing.Point(131, 118);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(320, 120);
+            this.panel1.Size = new System.Drawing.Size(427, 148);
             this.panel1.TabIndex = 15;
-            // 
-            // btLogin
-            // 
-            this.btLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
-            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btLogin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.btLogin.Location = new System.Drawing.Point(196, 230);
-            this.btLogin.Margin = new System.Windows.Forms.Padding(2);
-            this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(140, 38);
-            this.btLogin.TabIndex = 21;
-            this.btLogin.Text = "Login";
-            this.btLogin.UseVisualStyleBackColor = false;
             // 
             // pictureBox2
             // 
             this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox2.BackgroundImage = global::ProjectWedding.Properties.Resources._lock;
             this.pictureBox2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox2.Location = new System.Drawing.Point(32, 73);
+            this.pictureBox2.Location = new System.Drawing.Point(43, 90);
+            this.pictureBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox2.Size = new System.Drawing.Size(31, 28);
             this.pictureBox2.TabIndex = 23;
             this.pictureBox2.TabStop = false;
             // 
@@ -99,9 +87,10 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.BackgroundImage = global::ProjectWedding.Properties.Resources.user_1_;
             this.pictureBox1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.pictureBox1.Location = new System.Drawing.Point(32, 23);
+            this.pictureBox1.Location = new System.Drawing.Point(43, 28);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(23, 23);
+            this.pictureBox1.Size = new System.Drawing.Size(31, 28);
             this.pictureBox1.TabIndex = 22;
             this.pictureBox1.TabStop = false;
             // 
@@ -110,10 +99,10 @@
             this.tbPass.BackColor = System.Drawing.SystemColors.Window;
             this.tbPass.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tbPass.ForeColor = System.Drawing.SystemColors.InactiveCaptionText;
-            this.tbPass.Location = new System.Drawing.Point(70, 72);
-            this.tbPass.Margin = new System.Windows.Forms.Padding(2);
+            this.tbPass.Location = new System.Drawing.Point(93, 89);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbPass.Name = "tbPass";
-            this.tbPass.Size = new System.Drawing.Size(214, 29);
+            this.tbPass.Size = new System.Drawing.Size(284, 34);
             this.tbPass.TabIndex = 21;
             this.tbPass.Tag = "";
             this.tbPass.UseSystemPasswordChar = true;
@@ -123,28 +112,43 @@
             this.tbAccount.CausesValidation = false;
             this.tbAccount.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
             this.tbAccount.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.tbAccount.Location = new System.Drawing.Point(70, 21);
-            this.tbAccount.Margin = new System.Windows.Forms.Padding(2);
+            this.tbAccount.Location = new System.Drawing.Point(93, 26);
+            this.tbAccount.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.tbAccount.Name = "tbAccount";
-            this.tbAccount.Size = new System.Drawing.Size(214, 29);
+            this.tbAccount.Size = new System.Drawing.Size(284, 34);
             this.tbAccount.TabIndex = 20;
             this.tbAccount.Tag = "";
             this.tbAccount.WordWrap = false;
             // 
+            // btLogin
+            // 
+            this.btLogin.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btLogin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
+            this.btLogin.Location = new System.Drawing.Point(261, 283);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLogin.Name = "btLogin";
+            this.btLogin.Size = new System.Drawing.Size(187, 47);
+            this.btLogin.TabIndex = 21;
+            this.btLogin.Text = "Login";
+            this.btLogin.UseVisualStyleBackColor = false;
+            this.btLogin.Click += new System.EventHandler(this.btLogin_Click_1);
+            // 
             // FLogin
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSize = true;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.pinkWeddingHall;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(525, 312);
+            this.ClientSize = new System.Drawing.Size(700, 384);
             this.Controls.Add(this.btLogin);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.tbExit);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FLogin";
             this.SizeGripStyle = System.Windows.Forms.SizeGripStyle.Hide;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

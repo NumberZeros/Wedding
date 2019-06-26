@@ -55,5 +55,54 @@ namespace DAL
                 return list;
             }
         }
+
+        public List<FDatTiec_DTO> SelectTraCuu(string name)
+        {
+            List<FDatTiec_DTO> list = new List<FDatTiec_DTO>();
+            string query = String.Empty;
+            query += "select DATTIEC.[MaKH], [TenCD], [TenCR],[MaSanh], [NgayDT], [Ca],[SLBan] from [DATTIEC], [KHACHHANG] ";
+            query += " where(DATTIEC.[MaKH]=KHACHHANG.[MaKH]) AND (DATTIEC.[MaKH] = (select [MaKH] from [KHACHHANG] where";
+            query += "[TenCD] LIKE CONCAT ('%',@name,'%')) OR ([TenCR] LIKE CONCAT ('%',@name,'%'))) ";
+            using (SqlConnection con = new SqlConnection(xuly.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@name", name);
+                    try
+                    {
+                        con.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                FDatTiec_DTO db = new FDatTiec_DTO();
+                                db.maKH = int.Parse(reader["MaKH"].ToString());
+                                db.tenCRFake = reader["TenCR"].ToString();
+                                db.tenCDFake = reader["TenCD"].ToString();
+                                db.maSanh = int.Parse(reader["MaSanh"].ToString());
+                                db.ngayDT =DateTime.Parse( reader["NgayDT"].ToString());
+                                db.ca = int.Parse(reader["Ca"].ToString());
+                                db.slBan = int.Parse(reader["SLBan"].ToString());
+                                list.Add(db);
+                            }
+                        }
+                        con.Close();
+                        con.Dispose();
+                    }
+
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        con.Dispose();
+                    }
+                }
+                return list;
+            }
+        }
     }
 }

@@ -54,13 +54,6 @@ namespace ProjectWedding
             traCuu.Show();
         }
 
-        private void btBaoCao_Click(object sender, EventArgs e)
-        {
-            FBaoCao baoCao = new FBaoCao();
-            this.Hide();
-            baoCao.Show();
-        }
-
         private void btHoaDon_Click(object sender, EventArgs e)
         {
             FHoaDon hoaDon = new FHoaDon();

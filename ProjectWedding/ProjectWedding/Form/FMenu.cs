@@ -80,6 +80,7 @@ namespace ProjectWedding
         Button bt;
         private void LoadMenu()
         {
+            flowLayoutPanel1.Controls.Clear();
             for (int i = 0; i < gridAn.Rows.Count; i++)
             {
                 bt = new Button();
@@ -108,12 +109,73 @@ namespace ProjectWedding
             bt.Visible = false;
         }
 
+        //load nhung muc co trong ket qua tim kiem len thanh button
+        //private void LoadMenuTimKiem()
+        //{
+        //    flowLayoutPanel1.Controls.Clear();
+        //    for (int i = 0; i < gridAn.Rows.Count; i++)
+        //    {
+        //        bt = new Button();
+        //        bt.Click += Bt_Click;
+        //        bt.Height = 50;
+        //        bt.Width = 200;
+        //        bt.Text = Convert.ToString(gridAn.Rows[i].Cells["ten"].Value);
+        //        bt.Name = i.ToString();
+        //        bt.BackColor = Color.Aqua;
+        //        bt.Font = new Font(FontFamily.GenericSansSerif, 12.0F);
+        //        bt.TextAlign = ContentAlignment.MiddleCenter;
+        //        flowLayoutPanel1.Controls.Add(bt);
+        //    }
+        //}
+
         private void btTimKiem_Click(object sender, EventArgs e)
         {
-            
+            string sKeyword = tbTimKiem.Text.Trim(); //trim dung de xoa tat ca ca khoan trong co trong textbox
+            if(sKeyword == null || sKeyword == string.Empty || sKeyword.Length == 0)
+            {
+                List<FMonAn_DTO> list = new List<FMonAn_DTO>();
+                LoadGridAn(list);
+                LoadMenu();
+            }
+            else
+            {
+                List<FMonAn_DTO> listTimkiem = monAnBUS.selectTimkiem(sKeyword);
+                LoadGridAnTimKiem(listTimkiem);
+                LoadMenu();
+            }
         }
 
 
+
+        private void LoadGridAnTimKiem(List<FMonAn_DTO> listTimkiem)
+        {
+            gridAn.Columns.Clear(); //xóa sạch cột trên datagridview
+            gridAn.DataSource = null;
+
+            gridAn.AutoGenerateColumns = false; //không cho phép tự động tạo cột
+            gridAn.DataSource = listTimkiem;
+
+            DataGridViewTextBoxColumn clMa = new DataGridViewTextBoxColumn();
+            clMa.Name = "Ma";
+            clMa.HeaderText = "Mã Menu";
+            clMa.DataPropertyName = "maMonAn";
+            gridAn.Columns.Add(clMa);
+
+            DataGridViewTextBoxColumn clTen = new DataGridViewTextBoxColumn();
+            clTen.Name = "Ten";
+            clTen.HeaderText = "Tên";
+            clTen.DataPropertyName = "ten";
+            gridAn.Columns.Add(clTen);
+
+            DataGridViewTextBoxColumn clDonGia = new DataGridViewTextBoxColumn();
+            clDonGia.Name = "DonGia";
+            clDonGia.HeaderText = "Đơn Giá";
+            clDonGia.DataPropertyName = "donGia";
+            gridAn.Columns.Add(clDonGia);
+
+            CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[gridAn.DataSource];
+            myCurrencyManager.Refresh();
+        }
 
         private void btThanhToan_Click(object sender, EventArgs e)
         {
@@ -122,8 +184,8 @@ namespace ProjectWedding
 
         private void FMenu_Load(object sender, EventArgs e)
         {
-            List<FMonAn_DTO> list = new List<FMonAn_DTO>();
-            LoadGridAn(list);
+            //List<FMonAn_DTO> list = new List<FMonAn_DTO>();
+            //LoadGridAn(list);
             LoadMaKhachHang();
             LoadMenu();
            

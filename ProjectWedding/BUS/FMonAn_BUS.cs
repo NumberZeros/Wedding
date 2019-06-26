@@ -15,5 +15,10 @@ namespace BUS
         {
             return monAnDAL.select();
         }
+
+        public List<FMonAn_DTO> selectTimkiem(string sKeyword)
+        {
+            return monAnDAL.selectTimKiem(sKeyword);
+        }
     }
 }

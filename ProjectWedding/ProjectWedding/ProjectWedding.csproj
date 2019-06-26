@@ -73,12 +73,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form\FBaoCao.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form\FBaoCao.Designer.cs">
-      <DependentUpon>FBaoCao.cs</DependentUpon>
-    </Compile>
     <Compile Include="Form\FDatTiec.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -146,9 +140,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="FMain.resx">
       <DependentUpon>FMain.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Form\FBaoCao.resx">
-      <DependentUpon>FBaoCao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FDatTiec.resx">
       <DependentUpon>FDatTiec.cs</DependentUpon>

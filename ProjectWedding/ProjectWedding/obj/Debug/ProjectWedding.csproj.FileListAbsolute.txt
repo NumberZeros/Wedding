@@ -214,7 +214,6 @@ D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\bin\Debug\ru\DevExpress.Of
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.csprojResolveAssemblyReference.cache
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FLogin.resources
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FMain.resources
-D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FBaoCao.resources
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FDatTiec.resources
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FHoaDon.resources
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.FSanh.resources
@@ -316,3 +315,6 @@ D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\ja\DevExpress.Office.v
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\bin\Debug\ru\DevExpress.Office.v14.2.Core.resources.dll
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.SplashScreen.resources
 D:\GitHub\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.exe.licenses
+D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.SplashScreen.resources
+D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.exe
+D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.pdb

@@ -34,7 +34,6 @@
             this.notifyIcon1 = new System.Windows.Forms.NotifyIcon(this.components);
             this.btDatTiec = new System.Windows.Forms.Button();
             this.btTraCuu = new System.Windows.Forms.Button();
-            this.btBaoCao = new System.Windows.Forms.Button();
             this.btSanh = new System.Windows.Forms.Button();
             this.button1 = new System.Windows.Forms.Button();
             this.toolTip1 = new System.Windows.Forms.ToolTip(this.components);
@@ -54,10 +53,10 @@
             this.btReturn.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.btReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btReturn.Location = new System.Drawing.Point(10, 11);
-            this.btReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btReturn.Location = new System.Drawing.Point(13, 14);
+            this.btReturn.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btReturn.Name = "btReturn";
-            this.btReturn.Size = new System.Drawing.Size(113, 52);
+            this.btReturn.Size = new System.Drawing.Size(151, 64);
             this.btReturn.TabIndex = 0;
             this.btReturn.Text = "Log out";
             this.btReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -71,10 +70,10 @@
             this.btExit.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btExit.Image = global::ProjectWedding.Properties.Resources.login_square_arrow_button_outline;
             this.btExit.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btExit.Location = new System.Drawing.Point(714, 11);
-            this.btExit.Margin = new System.Windows.Forms.Padding(2);
+            this.btExit.Location = new System.Drawing.Point(952, 14);
+            this.btExit.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btExit.Name = "btExit";
-            this.btExit.Size = new System.Drawing.Size(108, 52);
+            this.btExit.Size = new System.Drawing.Size(144, 64);
             this.btExit.TabIndex = 1;
             this.btExit.Text = "Exit";
             this.btExit.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -93,9 +92,10 @@
             this.btDatTiec.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btDatTiec.Image = global::ProjectWedding.Properties.Resources.food_and_restaurant;
             this.btDatTiec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btDatTiec.Location = new System.Drawing.Point(452, 256);
+            this.btDatTiec.Location = new System.Drawing.Point(603, 315);
+            this.btDatTiec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btDatTiec.Name = "btDatTiec";
-            this.btDatTiec.Size = new System.Drawing.Size(283, 50);
+            this.btDatTiec.Size = new System.Drawing.Size(377, 62);
             this.btDatTiec.TabIndex = 15;
             this.btDatTiec.Text = "Đặt tiệc";
             this.btDatTiec.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -110,32 +110,16 @@
             this.btTraCuu.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTraCuu.Image = global::ProjectWedding.Properties.Resources.search_4_;
             this.btTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTraCuu.Location = new System.Drawing.Point(106, 309);
+            this.btTraCuu.Location = new System.Drawing.Point(141, 380);
+            this.btTraCuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btTraCuu.Name = "btTraCuu";
-            this.btTraCuu.Size = new System.Drawing.Size(283, 53);
+            this.btTraCuu.Size = new System.Drawing.Size(377, 65);
             this.btTraCuu.TabIndex = 17;
             this.btTraCuu.Text = "Tra cứu tiệc";
             this.btTraCuu.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.toolTip1.SetToolTip(this.btTraCuu, "Tra cứu tiệc theo ngày diễn ra");
             this.btTraCuu.UseVisualStyleBackColor = false;
             this.btTraCuu.Click += new System.EventHandler(this.btTraCuu_Click);
-            // 
-            // btBaoCao
-            // 
-            this.btBaoCao.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-            this.btBaoCao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btBaoCao.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btBaoCao.Image = global::ProjectWedding.Properties.Resources.statistics_1_;
-            this.btBaoCao.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btBaoCao.Location = new System.Drawing.Point(106, 414);
-            this.btBaoCao.Name = "btBaoCao";
-            this.btBaoCao.Size = new System.Drawing.Size(283, 50);
-            this.btBaoCao.TabIndex = 18;
-            this.btBaoCao.Text = "Báo cáo";
-            this.btBaoCao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.toolTip4.SetToolTip(this.btBaoCao, "Báo cáo về doanh thu");
-            this.btBaoCao.UseVisualStyleBackColor = false;
-            this.btBaoCao.Click += new System.EventHandler(this.btBaoCao_Click);
             // 
             // btSanh
             // 
@@ -144,9 +128,10 @@
             this.btSanh.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btSanh.Image = global::ProjectWedding.Properties.Resources.search;
             this.btSanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSanh.Location = new System.Drawing.Point(106, 199);
+            this.btSanh.Location = new System.Drawing.Point(141, 245);
+            this.btSanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btSanh.Name = "btSanh";
-            this.btSanh.Size = new System.Drawing.Size(283, 55);
+            this.btSanh.Size = new System.Drawing.Size(377, 68);
             this.btSanh.TabIndex = 19;
             this.btSanh.Text = "Danh sách sảnh";
             this.btSanh.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -161,9 +146,10 @@
             this.button1.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.button1.Image = global::ProjectWedding.Properties.Resources.bills;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.button1.Location = new System.Drawing.Point(452, 355);
+            this.button1.Location = new System.Drawing.Point(603, 437);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(283, 53);
+            this.button1.Size = new System.Drawing.Size(377, 65);
             this.button1.TabIndex = 20;
             this.button1.Text = "Quản lí Sổ Chi Tiết";
             this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
@@ -179,9 +165,10 @@
             // 
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ProjectWedding.Properties.Resources.user;
-            this.pictureBox1.Location = new System.Drawing.Point(390, 11);
+            this.pictureBox1.Location = new System.Drawing.Point(520, 14);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(74, 77);
+            this.pictureBox1.Size = new System.Drawing.Size(99, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.pictureBox1.TabIndex = 21;
             this.pictureBox1.TabStop = false;
@@ -192,32 +179,33 @@
             this.lblRole.BackColor = System.Drawing.Color.Transparent;
             this.lblRole.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F);
             this.lblRole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRole.Location = new System.Drawing.Point(394, 91);
+            this.lblRole.Location = new System.Drawing.Point(525, 112);
+            this.lblRole.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRole.Name = "lblRole";
-            this.lblRole.Size = new System.Drawing.Size(70, 25);
+            this.lblRole.Size = new System.Drawing.Size(85, 31);
             this.lblRole.TabIndex = 22;
             this.lblRole.Text = "admin";
             // 
             // FMain
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.Main1;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(837, 518);
+            this.ClientSize = new System.Drawing.Size(1116, 638);
             this.Controls.Add(this.lblRole);
             this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.btSanh);
-            this.Controls.Add(this.btBaoCao);
             this.Controls.Add(this.btTraCuu);
             this.Controls.Add(this.btDatTiec);
             this.Controls.Add(this.btExit);
             this.Controls.Add(this.btReturn);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FMain";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "main";
             this.Load += new System.EventHandler(this.FMain_Load);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
@@ -233,7 +221,6 @@
         private System.Windows.Forms.NotifyIcon notifyIcon1;
         private System.Windows.Forms.Button btDatTiec;
         private System.Windows.Forms.Button btTraCuu;
-        private System.Windows.Forms.Button btBaoCao;
         private System.Windows.Forms.Button btSanh;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.ToolTip toolTip1;

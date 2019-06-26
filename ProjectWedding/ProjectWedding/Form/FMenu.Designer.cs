@@ -69,17 +69,18 @@
             // 
             // tbTimKiem
             // 
-            this.tbTimKiem.Location = new System.Drawing.Point(12, 80);
+            this.tbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tbTimKiem.Location = new System.Drawing.Point(13, 71);
             this.tbTimKiem.Name = "tbTimKiem";
-            this.tbTimKiem.Size = new System.Drawing.Size(458, 22);
+            this.tbTimKiem.Size = new System.Drawing.Size(407, 34);
             this.tbTimKiem.TabIndex = 3;
             // 
             // btTimKiem
             // 
-            this.btTimKiem.Font = new System.Drawing.Font("Microsoft YaHei", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btTimKiem.Location = new System.Drawing.Point(477, 80);
+            this.btTimKiem.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimKiem.Location = new System.Drawing.Point(426, 71);
             this.btTimKiem.Name = "btTimKiem";
-            this.btTimKiem.Size = new System.Drawing.Size(73, 23);
+            this.btTimKiem.Size = new System.Drawing.Size(135, 36);
             this.btTimKiem.TabIndex = 4;
             this.btTimKiem.Text = "Tìm Kiếm";
             this.btTimKiem.UseVisualStyleBackColor = true;

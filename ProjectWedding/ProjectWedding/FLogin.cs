@@ -61,10 +61,16 @@ namespace ProjectWedding
             return 0;
         }
         public static string SelectedText = ""; //khai báo SelectedText để dùng
-        private void btLogin_Click(object sender, EventArgs e)
+
+        private void tbExit_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void btLogin_Click_1(object sender, EventArgs e)
         {
             FMain main = new FMain();
-            if(CheckAccount()==1)
+            if (CheckAccount() == 1)
             {
                 SelectedText = tbAccount.Text; //lấy teowr tbAccount truyền vô string SelectedText
                 this.Hide();
@@ -72,15 +78,10 @@ namespace ProjectWedding
             }
             else
             {
-                DialogResult dialog= MessageBox.Show("Error", "Thông tin nhập sai mời bạn thử lại", MessageBoxButtons.OK); //messageBox khi nhập sai
-                if(dialog==DialogResult.OK)
+                DialogResult dialog = MessageBox.Show("Error", "Thông tin nhập sai mời bạn thử lại", MessageBoxButtons.OK); //messageBox khi nhập sai
+                if (dialog == DialogResult.OK)
                     Application.Restart();
             }
-        }
-
-        private void tbExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
         }
     }
 }

@@ -28,5 +28,10 @@ namespace BUS
         {
             return datTiecDAL.SelectTop1();
         }
+
+        public List<FDatTiec_DTO> SelectTraCuu(string name)
+        {
+            return datTiecDAL.SelectTraCuu(name);
+        }
     }
 }
