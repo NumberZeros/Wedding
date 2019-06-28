@@ -101,7 +101,7 @@ namespace ProjectWedding
         private void Bt_Click(object sender, EventArgs e)
         {
             List<FMonAn_DTO> listMenu = new List<FMonAn_DTO>();
-            bt = (Button)sender;
+            bt = (Button)sender;// xac dinh button truyền vào
             menuDTO.tenMonAn = bt.Text;
             menuDTO.maKHFake = int.Parse(cbMaKH.SelectedValue.ToString());
             menuBUS.Add(menuDTO);

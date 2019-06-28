@@ -111,10 +111,10 @@ namespace ProjectWedding
             {
                 bool kq = sanhBUS.Update(sanhDTO);
                 if (kq == false)
-                    MessageBox.Show("Sửa kiểu nấu thất bại. Vui lòng kiểm tra lại dữ liệu");
+                    MessageBox.Show("Sửa nội dung thất bại. Vui lòng kiểm tra lại dữ liệu");
                 else
                 {
-                    MessageBox.Show("Sửa Kiểu nấu thành công");
+                    MessageBox.Show("Sửa nội dung thành công");
                     LoadSanh();
                 }
             }
