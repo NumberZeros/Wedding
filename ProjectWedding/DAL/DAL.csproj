@@ -42,20 +42,34 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="FKhachHang_DAL.cs" />
+    <Compile Include="FMonAn_DAL.cs" />
     <Compile Include="FNoiQui_DAL.cs" />
     <Compile Include="FDatTiec_DAL.cs" />
     <Compile Include="FHoaDon_DAL.cs" />
     <Compile Include="FMenu_DAL.cs" />
     <Compile Include="FQuanLyHoaDon_DAL.cs" />
     <Compile Include="FSanh_DAL.cs" />
+    <Compile Include="FThongKe_DAL.cs" />
     <Compile Include="FXuLy_DAL.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+      <DependentUpon>Settings.settings</DependentUpon>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\DTO\DTO.csproj">
       <Project>{59202ed7-fc74-4c4f-96a0-b3e7afcefc3c}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

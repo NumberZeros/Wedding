@@ -60,5 +60,14 @@ namespace ProjectWedding
             this.Hide();
             sanh.Show();
         }
+
+
+        // Thêm button QUản lý chi tiết
+        private void btQuanlyCT_Click(object sender, EventArgs e)
+        {
+            FQuanLyCT quanlyCT = new FQuanLyCT();
+            this.Hide();
+            quanlyCT.Show();
+        }
     }
 }
