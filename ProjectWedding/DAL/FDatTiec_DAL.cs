@@ -61,8 +61,8 @@ namespace DAL
             List<FDatTiec_DTO> list = new List<FDatTiec_DTO>();
             string query = String.Empty;
             query += "select DATTIEC.[MaKH], [TenCD], [TenCR],[MaSanh], [NgayDT], [Ca],[SLBan] from [DATTIEC], [KHACHHANG] ";
-            query += " where(DATTIEC.[MaKH]=KHACHHANG.[MaKH]) AND (DATTIEC.[MaKH] = (select [MaKH] from [KHACHHANG] where";
-            query += "[TenCD] LIKE CONCAT ('%',@name,'%')) OR ([TenCR] LIKE CONCAT ('%',@name,'%'))) ";
+            query += " where (DATTIEC.[MaKH]=KHACHHANG.[MaKH]) AND";
+            query+=" (( [TenCD] LIKE CONCAT ('%',@name,'%')) OR ([TenCR] LIKE CONCAT ('%',@name,'%'))) ";
             using (SqlConnection con = new SqlConnection(xuly.ConnectionString))
             {
                 using (SqlCommand cmd = new SqlCommand())

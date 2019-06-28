@@ -93,7 +93,7 @@
             this.btDatTiec.Image = global::ProjectWedding.Properties.Resources.food_and_restaurant;
             this.btDatTiec.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btDatTiec.Location = new System.Drawing.Point(603, 315);
-            this.btDatTiec.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btDatTiec.Margin = new System.Windows.Forms.Padding(4);
             this.btDatTiec.Name = "btDatTiec";
             this.btDatTiec.Size = new System.Drawing.Size(377, 62);
             this.btDatTiec.TabIndex = 15;
@@ -111,7 +111,7 @@
             this.btTraCuu.Image = global::ProjectWedding.Properties.Resources.search_4_;
             this.btTraCuu.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btTraCuu.Location = new System.Drawing.Point(141, 380);
-            this.btTraCuu.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btTraCuu.Margin = new System.Windows.Forms.Padding(4);
             this.btTraCuu.Name = "btTraCuu";
             this.btTraCuu.Size = new System.Drawing.Size(377, 65);
             this.btTraCuu.TabIndex = 17;
@@ -129,7 +129,7 @@
             this.btSanh.Image = global::ProjectWedding.Properties.Resources.search;
             this.btSanh.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btSanh.Location = new System.Drawing.Point(141, 245);
-            this.btSanh.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.btSanh.Margin = new System.Windows.Forms.Padding(4);
             this.btSanh.Name = "btSanh";
             this.btSanh.Size = new System.Drawing.Size(377, 68);
             this.btSanh.TabIndex = 19;
@@ -147,7 +147,7 @@
             this.button1.Image = global::ProjectWedding.Properties.Resources.bills;
             this.button1.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.button1.Location = new System.Drawing.Point(603, 437);
-            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.button1.Margin = new System.Windows.Forms.Padding(4);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(377, 65);
             this.button1.TabIndex = 20;
@@ -166,7 +166,7 @@
             this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
             this.pictureBox1.Image = global::ProjectWedding.Properties.Resources.user;
             this.pictureBox1.Location = new System.Drawing.Point(520, 14);
-            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.pictureBox1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureBox1.Name = "pictureBox1";
             this.pictureBox1.Size = new System.Drawing.Size(99, 95);
             this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
@@ -179,7 +179,7 @@
             this.lblRole.BackColor = System.Drawing.Color.Transparent;
             this.lblRole.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F);
             this.lblRole.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.lblRole.Location = new System.Drawing.Point(397, 91);
+            this.lblRole.Location = new System.Drawing.Point(524, 131);
             this.lblRole.Name = "lblRole";
             this.lblRole.Size = new System.Drawing.Size(85, 31);
             this.lblRole.TabIndex = 22;

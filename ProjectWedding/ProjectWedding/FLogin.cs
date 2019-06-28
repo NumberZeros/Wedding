@@ -68,17 +68,8 @@ namespace ProjectWedding
             Application.Exit();
         }
 
-        private void btLogin_Click_1(object sender, EventArgs e)
-        {
-          
-        }
 
-        private void tbExit_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
-        private void btLogin_Click_1(object sender, EventArgs e)
+        private void btLogin_Click(object sender, EventArgs e)
         {
             FMain main = new FMain();
             if (CheckAccount() == 1)
@@ -93,6 +84,11 @@ namespace ProjectWedding
                 if (dialog == DialogResult.OK)
                     Application.Restart();
             }
+        }
+
+        private void tbExit_Click_1(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

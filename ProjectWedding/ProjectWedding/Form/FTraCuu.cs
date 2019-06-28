@@ -37,8 +37,8 @@ namespace ProjectWedding
 
         private void LoadData()
         {
-            
-            string name = tbName.Text.Trim();
+            string name = String.Empty;
+            name = tbName.Text.Trim();
             List<FDatTiec_DTO> list = datTiecBUS.SelectTraCuu(name);
 
             gridTraCuu.Columns.Clear(); //xóa sạch cột trên datagridview
