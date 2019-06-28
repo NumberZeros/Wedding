@@ -34,10 +34,10 @@
             // 
             // progressBar1
             // 
-            this.progressBar1.Location = new System.Drawing.Point(9, 198);
+            this.progressBar1.Location = new System.Drawing.Point(14, 225);
             this.progressBar1.MarqueeAnimationSpeed = 50;
             this.progressBar1.Name = "progressBar1";
-            this.progressBar1.Size = new System.Drawing.Size(287, 29);
+            this.progressBar1.Size = new System.Drawing.Size(320, 29);
             this.progressBar1.Style = System.Windows.Forms.ProgressBarStyle.Marquee;
             this.progressBar1.TabIndex = 2;
             // 
@@ -45,12 +45,12 @@
             // 
             this.label1.AutoSize = true;
             this.label1.BackColor = System.Drawing.Color.Transparent;
-            this.label1.Font = new System.Drawing.Font("Papyrus", 28F, System.Drawing.FontStyle.Bold);
-            this.label1.Location = new System.Drawing.Point(57, 122);
+            this.label1.Font = new System.Drawing.Font("Papyrus", 20F, System.Drawing.FontStyle.Bold);
+            this.label1.Location = new System.Drawing.Point(29, 121);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(193, 60);
+            this.label1.Size = new System.Drawing.Size(297, 84);
             this.label1.TabIndex = 3;
-            this.label1.Text = "Welcome!";
+            this.label1.Text = "Wedding Reservation \r\n         Application ";
             // 
             // SplashScreen
             // 
@@ -59,7 +59,7 @@
             this.BackColor = System.Drawing.Color.LightCoral;
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.logo;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
-            this.ClientSize = new System.Drawing.Size(304, 236);
+            this.ClientSize = new System.Drawing.Size(344, 266);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.progressBar1);
             this.DoubleBuffered = true;

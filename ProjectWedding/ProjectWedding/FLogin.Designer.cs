@@ -126,10 +126,10 @@
             this.btLogin.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
             this.btLogin.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btLogin.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-            this.btLogin.Location = new System.Drawing.Point(261, 283);
-            this.btLogin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btLogin.Location = new System.Drawing.Point(196, 230);
+            this.btLogin.Margin = new System.Windows.Forms.Padding(2);
             this.btLogin.Name = "btLogin";
-            this.btLogin.Size = new System.Drawing.Size(187, 47);
+            this.btLogin.Size = new System.Drawing.Size(140, 38);
             this.btLogin.TabIndex = 21;
             this.btLogin.Text = "Login";
             this.btLogin.UseVisualStyleBackColor = false;

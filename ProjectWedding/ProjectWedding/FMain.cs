@@ -13,21 +13,12 @@ namespace ProjectWedding
 {
     public partial class FMain : Form
     {
-        //thêm cai man hinh SplashScreen (tên ban đầu là Waitform), lúc đầu làm vô Flogin mà chạy vô đây nên thoi làm vô đây chạy thử
-        //muốn thì dời code lại qua bên FLogin (nếu cho chạy FLogin lúc vô đầu)
+      
         public FMain()
         {
-            Thread t = new Thread(new ThreadStart(StartForm));
-            t.Start();
-            Thread.Sleep(5000);
             InitializeComponent();
-            t.Abort();
         }
-        public void StartForm()
-        {
-            Application.Run(new SplashScreen());
-        }
-
+       
         private void btReturn_Click(object sender, EventArgs e)
         {
             FLogin login = new FLogin();
