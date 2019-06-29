@@ -126,3 +126,6 @@ D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.P
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.csproj.GenerateResource.Cache
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.exe
 D:\Git_Projrect\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.pdb
+D:\Wedding\Wedding\ProjectWedding\ProjectWedding\bin\Debug\ProjectWedding.exe.config
+D:\Wedding\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.exe
+D:\Wedding\Wedding\ProjectWedding\ProjectWedding\obj\Debug\ProjectWedding.pdb
