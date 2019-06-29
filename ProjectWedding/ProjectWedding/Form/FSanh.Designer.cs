@@ -55,7 +55,7 @@
             this.btsReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.btsReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btsReturn.Location = new System.Drawing.Point(9, 10);
-            this.btsReturn.Margin = new System.Windows.Forms.Padding(2);
+            this.btsReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btsReturn.Name = "btsReturn";
             this.btsReturn.Size = new System.Drawing.Size(75, 26);
             this.btsReturn.TabIndex = 0;
@@ -134,7 +134,7 @@
             // tbGhiChu
             // 
             this.tbGhiChu.Location = new System.Drawing.Point(91, 91);
-            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(2);
+            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbGhiChu.Name = "tbGhiChu";
             this.tbGhiChu.Size = new System.Drawing.Size(564, 20);
             this.tbGhiChu.TabIndex = 26;
@@ -149,7 +149,7 @@
             "D",
             "E"});
             this.cbLoai.Location = new System.Drawing.Point(252, 57);
-            this.cbLoai.Margin = new System.Windows.Forms.Padding(2);
+            this.cbLoai.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.cbLoai.Name = "cbLoai";
             this.cbLoai.Size = new System.Drawing.Size(66, 21);
             this.cbLoai.TabIndex = 25;
@@ -157,7 +157,7 @@
             // tbDonGia
             // 
             this.tbDonGia.Location = new System.Drawing.Point(594, 57);
-            this.tbDonGia.Margin = new System.Windows.Forms.Padding(2);
+            this.tbDonGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbDonGia.Name = "tbDonGia";
             this.tbDonGia.Size = new System.Drawing.Size(61, 20);
             this.tbDonGia.TabIndex = 24;
@@ -165,7 +165,7 @@
             // tbSLBan
             // 
             this.tbSLBan.Location = new System.Drawing.Point(464, 57);
-            this.tbSLBan.Margin = new System.Windows.Forms.Padding(2);
+            this.tbSLBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbSLBan.Name = "tbSLBan";
             this.tbSLBan.Size = new System.Drawing.Size(55, 20);
             this.tbSLBan.TabIndex = 23;
@@ -173,7 +173,7 @@
             // tbTen
             // 
             this.tbTen.Location = new System.Drawing.Point(91, 57);
-            this.tbTen.Margin = new System.Windows.Forms.Padding(2);
+            this.tbTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.tbTen.Name = "tbTen";
             this.tbTen.Size = new System.Drawing.Size(76, 20);
             this.tbTen.TabIndex = 22;
@@ -186,7 +186,7 @@
             this.btTroGiup.Image = global::ProjectWedding.Properties.Resources.information;
             this.btTroGiup.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btTroGiup.Location = new System.Drawing.Point(524, 130);
-            this.btTroGiup.Margin = new System.Windows.Forms.Padding(2);
+            this.btTroGiup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btTroGiup.Name = "btTroGiup";
             this.btTroGiup.Size = new System.Drawing.Size(91, 28);
             this.btTroGiup.TabIndex = 35;
@@ -203,7 +203,7 @@
             this.btSua.Image = global::ProjectWedding.Properties.Resources.pencil;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btSua.Location = new System.Drawing.Point(367, 130);
-            this.btSua.Margin = new System.Windows.Forms.Padding(2);
+            this.btSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btSua.Name = "btSua";
             this.btSua.Size = new System.Drawing.Size(91, 28);
             this.btSua.TabIndex = 34;
@@ -220,7 +220,7 @@
             this.btXoa.Image = global::ProjectWedding.Properties.Resources.delete;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btXoa.Location = new System.Drawing.Point(206, 130);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(2);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btXoa.Name = "btXoa";
             this.btXoa.Size = new System.Drawing.Size(91, 28);
             this.btXoa.TabIndex = 33;
@@ -237,7 +237,7 @@
             this.btThem.Image = global::ProjectWedding.Properties.Resources.add_1_;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.btThem.Location = new System.Drawing.Point(60, 130);
-            this.btThem.Margin = new System.Windows.Forms.Padding(2);
+            this.btThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.btThem.Name = "btThem";
             this.btThem.Size = new System.Drawing.Size(91, 28);
             this.btThem.TabIndex = 32;
@@ -251,7 +251,7 @@
             this.label6.AutoSize = true;
             this.label6.Location = new System.Drawing.Point(9, 67);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(0, 13);
+            this.label6.Size = new System.Drawing.Size(0, 17);
             this.label6.TabIndex = 36;
             this.label6.Visible = false;
             // 
@@ -259,9 +259,10 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(1067, 539);
+            this.Controls.Add(this.label6);
             this.BackgroundImage = global::ProjectWedding.Properties.Resources.MagnetStreet_PinkMarble_1920x1080;
             this.ClientSize = new System.Drawing.Size(683, 365);
-            this.Controls.Add(this.label6);
             this.Controls.Add(this.btTroGiup);
             this.Controls.Add(this.btSua);
             this.Controls.Add(this.btXoa);
@@ -279,7 +280,7 @@
             this.Controls.Add(this.gridSanh);
             this.Controls.Add(this.btsReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "FSanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSanh";
