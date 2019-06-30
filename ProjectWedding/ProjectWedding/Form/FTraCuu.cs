@@ -7,9 +7,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Data.SqlClient;
-using DTO;
 using BUS;
+using DTO;
 
 namespace ProjectWedding
 {
@@ -28,83 +27,75 @@ namespace ProjectWedding
             main.Show();
         }
 
-        private FDatTiec_BUS dattiecBUS = new FDatTiec_BUS();
-        private FDatTiec_DTO dattiecDTO = new FDatTiec_DTO();
+        FDatTiec_DTO datTiecDTO = new FDatTiec_DTO();
+        FDatTiec_BUS datTiecBUS = new FDatTiec_BUS();
 
-        private FKhachHang_BUS khachhangBUS = new FKhachHang_BUS();
-        private FKhachHang_DTO khachhangDTO = new FKhachHang_DTO();
-
-
-        private void LoadFTraCuu()
+        private void btTiemkiem_Click(object sender, EventArgs e)
         {
-            List<FDatTiec_DTO> listDatTiec = dattiecBUS.select();
-            if (listDatTiec == null)
-            {
-                DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
-                if (kq == DialogResult.Yes)
-                    Application.Restart();
-            }
+            LoadData();
+        }
 
-            List<FKhachHang_DTO> listKhachHang = khachhangBUS.select();
-            if (listKhachHang == null)
-            {
-                DialogResult kq = MessageBox.Show("Loi", "Vui long kiem tra lai internet truoc khi load data", MessageBoxButtons.YesNo);
-                if (kq == DialogResult.Yes)
-                    Application.Restart();
-            }
+        private void LoadData()
+        {
+            string name = String.Empty;
+            name = tbName.Text.Trim();
+            List<FDatTiec_DTO> list = datTiecBUS.SelectTraCuu(name);
 
-            gridTraCuu.Columns.Clear();
+            gridTraCuu.Columns.Clear(); //xóa sạch cột trên datagridview
             gridTraCuu.DataSource = null;
 
+            gridTraCuu.AutoGenerateColumns = false; //không cho phép tự động tạo cột
+            gridTraCuu.DataSource = list;
 
-            gridTraCuu.AutoGenerateColumns = false;
-            gridTraCuu.AllowUserToAddRows = false;
-            gridTraCuu.DataSource = listDatTiec;
-            gridTraCuu.DataSource = listKhachHang;
+            DataGridViewTextBoxColumn clMa = new DataGridViewTextBoxColumn();
+            clMa.Name = "Ma";
+            clMa.HeaderText = "Mã Khách Hàng";
+            clMa.DataPropertyName = "maKH";
+            gridTraCuu.Columns.Add(clMa);
 
-            DataGridViewTextBoxColumn clMaDT = new DataGridViewTextBoxColumn();
-            clMaDT.Name = "Ma";
-            clMaDT.HeaderText = "Mã đặt tiệc";
-            clMaDT.DataPropertyName = "maDT"; //kiểu dữ liệu nằm ở lớp DTO
-            gridTraCuu.Columns.Add(clMaDT);
+            DataGridViewTextBoxColumn clTenCR = new DataGridViewTextBoxColumn();
+            clTenCR.Name = "TenCR";
+            clTenCR.HeaderText = "Tên Chú Rể";
+            clTenCR.DataPropertyName = "tenCRFake";
+            gridTraCuu.Columns.Add(clTenCR);
 
-            DataGridViewTextBoxColumn clNgayDT = new DataGridViewTextBoxColumn();
-            clNgayDT.Name = "NgayDT";
-            clNgayDT.HeaderText = "Ngày đặt tiệc";
-            clNgayDT.DataPropertyName = "ngayDT";
-            gridTraCuu.Columns.Add(clNgayDT);
+            DataGridViewTextBoxColumn clTenCD = new DataGridViewTextBoxColumn();
+            clTenCD.Name = "TenCD";
+            clTenCD.HeaderText = "Tên Cô Dâu";
+            clTenCD.DataPropertyName = "tenCDFake";
+            gridTraCuu.Columns.Add(clTenCD);
+
+            DataGridViewTextBoxColumn clMaSanh = new DataGridViewTextBoxColumn();
+            clMaSanh.Name = "maSanh";
+            clMaSanh.HeaderText = "Mã Sảnh";
+            clMaSanh.DataPropertyName = "maSanh";
+            gridTraCuu.Columns.Add(clMaSanh);
 
             DataGridViewTextBoxColumn clCa = new DataGridViewTextBoxColumn();
-            clCa.Name = "Ca";
+            clCa.Name = "ca";
             clCa.HeaderText = "Ca";
             clCa.DataPropertyName = "ca";
             gridTraCuu.Columns.Add(clCa);
 
-            DataGridViewTextBoxColumn clTenCD = new DataGridViewTextBoxColumn();
-            clTenCD.Name = "TenCD";
-            clTenCD.HeaderText = "Tên cô dâu";
-            clTenCD.DataPropertyName = "tenCD"; //kiểu dữ liệu nằm ở lớp DTO
-            gridTraCuu.Columns.Add(clTenCD);
+            DataGridViewTextBoxColumn clNgayDT = new DataGridViewTextBoxColumn();
+            clNgayDT.Name = "NgayDT";
+            clNgayDT.HeaderText = "Ngày Đặt Tiệc";
+            clNgayDT.DataPropertyName = "ngayDT";
+            gridTraCuu.Columns.Add(clNgayDT);
 
-            DataGridViewTextBoxColumn clTenCR = new DataGridViewTextBoxColumn();
-            clTenCR.Name = "TenCR";
-            clTenCR.HeaderText = "Tên chú rể";
-            clTenCR.DataPropertyName = "tenCR";
-            gridTraCuu.Columns.Add(clTenCR);
-
-            DataGridViewTextBoxColumn clSDT = new DataGridViewTextBoxColumn();
-            clSDT.Name = "SDT";
-            clSDT.HeaderText = "Số điện thoại";
-            clSDT.DataPropertyName = "soDT";
-            gridTraCuu.Columns.Add(clSDT);
+            DataGridViewTextBoxColumn clSLBan = new DataGridViewTextBoxColumn();
+            clSLBan.Name = "slBan";
+            clSLBan.HeaderText = "Số Lượng Bàn";
+            clSLBan.DataPropertyName = "slBan";
+            gridTraCuu.Columns.Add(clSLBan);
 
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[gridTraCuu.DataSource];
             myCurrencyManager.Refresh();
-        }
-        private void FTraCuu_Load(object sender, EventArgs e)
-        {
-            LoadFTraCuu();
 
+            if(gridTraCuu.Rows.Count==0)
+            {
+                MessageBox.Show("Không có thông tin khách hàng trong hệ thống ", "Thông báo", MessageBoxButtons.OK);
+            }
         }
     }
 }

@@ -91,6 +91,10 @@ namespace ProjectWedding
         private void FSanh_Load(object sender, EventArgs e)
         {
             LoadSanh();
+            //disable 3 nút
+            btThem.Enabled = false;
+            btSua.Enabled = false;
+            btXoa.Enabled = false;
 
         }
 
@@ -99,7 +103,7 @@ namespace ProjectWedding
         {
             sanhDTO.maSanh = int.Parse(label6.Text);
             sanhDTO.tenSanh = tbTen.Text;
-            sanhDTO.loaiSanh = cbLoai.Text;
+            sanhDTO.loaiSanh = tbLoaiSanh.Text;
             sanhDTO.soluongMax = int.Parse(tbSLBan.Text);
             sanhDTO.donGiaMin = int.Parse(tbDonGia.Text);
             sanhDTO.ghiChu = tbGhiChu.Text;
@@ -107,10 +111,10 @@ namespace ProjectWedding
             {
                 bool kq = sanhBUS.Update(sanhDTO);
                 if (kq == false)
-                    MessageBox.Show("Sửa kiểu nấu thất bại. Vui lòng kiểm tra lại dữ liệu");
+                    MessageBox.Show("Sửa nội dung thất bại. Vui lòng kiểm tra lại dữ liệu");
                 else
                 {
-                    MessageBox.Show("Sửa Kiểu nấu thành công");
+                    MessageBox.Show("Sửa nội dung thành công");
                     LoadSanh();
                 }
             }
@@ -118,7 +122,10 @@ namespace ProjectWedding
 
         private void btTroGiup_Click(object sender, EventArgs e)
         {
-
+            //enable 3 nút 
+            btThem.Enabled = true;
+            btSua.Enabled = true;
+            btXoa.Enabled = true;
         }
 
         private void btXoa_Click(object sender, EventArgs e)
@@ -146,7 +153,7 @@ namespace ProjectWedding
         private void btThem_Click(object sender, EventArgs e)
         {
             sanhDTO.tenSanh = tbTen.Text;
-            sanhDTO.loaiSanh = cbLoai.Text;
+            sanhDTO.loaiSanh = tbLoaiSanh.Text;
             sanhDTO.soluongMax = int.Parse(tbSLBan.Text);
             sanhDTO.donGiaMin = int.Parse(tbDonGia.Text);
             sanhDTO.ghiChu = tbGhiChu.Text;
@@ -168,7 +175,7 @@ namespace ProjectWedding
             DataGridViewRow row = gridSanh.Rows[indexRow];
             label6.Text = row.Cells[0].Value.ToString();
             tbTen.Text = row.Cells[1].Value.ToString();
-            cbLoai.Text = row.Cells[2].Value.ToString();
+            tbLoaiSanh.Text = row.Cells[2].Value.ToString();
             tbSLBan.Text = row.Cells[3].Value.ToString();
             tbDonGia.Text = row.Cells[4].Value.ToString();
             tbGhiChu.Text = row.Cells[5].Value.ToString();

@@ -40,12 +40,22 @@ create table HOADON
 
 create table Menu
 (
-	MaMenu int primary key,
+	MaMenu int identity primary key,
+	MaHD int
+)
+
+create table MONAN
+(
+	MaMonAn int primary key,
 	Ten varchar(100),
-	DonGia int,
-	GhiChu varchar(100),
-	MaHD int,
-	FOREIGN KEY (MaHD) REFERENCES HOADON(MaHD) on update cascade,
+	DonGia int
+)
+
+create table QUIDINH
+(
+	MaQD int identity primary key,
+	TenQD varchar(100),
+	Phat varchar(100)
 )
 
 -- thêm khóa ngoại MaHK cho bảng DATTIEC
@@ -61,7 +71,7 @@ create table Menu
  alter table khachhang drop column MaHD
 
 
- -- thêm khóa ngoại MaSanh cho bảng HOADON
+ -- thêm khóa ngoại MaSanh va MaKH cho bảng HOADON
  alter table HOADON add MaSanh int
  alter table HOADON add CONSTRAINT FK_MaSanh_HoaDon
  FOREIGN KEY (MaSanh) REFERENCES SANH(MaSanh) 
@@ -69,21 +79,14 @@ create table Menu
  alter table hoadon add constraint FK_MaKH_HoaDon
  foreign key (MaKH) references khachhang(MaKH)
 
+-- thêm khóa ngoại MaMonAn cho bảng MENU
+alter table menu add MaMonAn int 
+alter table menu add constraint fk_MaMonAn_MENU
+foreign key (MaMonAN) references monan(MaMonAN)
 
+alter table menu add constraint fk_MaHD_MENU
+foreign key (MaHD) references HOADON(MaHD)
 
- -- thêm khóa ngoại MaSanh cho bảng HOADON
- alter table HOADON add MaSanh int
- alter table HOADON add CONSTRAINT FK_MaSanh_HoaDon
- FOREIGN KEY (MaSanh) REFERENCES SANH(MaSanh) 
-
-
-
-create table QUIDINH
-(
-	MaQD int identity primary key,
-	TenQD varchar(100),
-	Phat varchar(100)
-)
 
 
 

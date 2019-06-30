@@ -29,15 +29,20 @@ namespace BUS
 
         public bool delete(FSanh_DTO sanhDTO)
         {
-            string query = "delete from Sanh where MaSanh='" + sanhDTO.maSanh + "'";
+            string query = "delete from Sanh where MaSanh='"+sanhDTO.maSanh+"'";
             bool kq = xl.Command(query);
-            return kq;
+           return kq;
         }
 
         public bool Update(FSanh_DTO sanhDTO)
         {
             bool kq = sanhDAL.sua(sanhDTO);
             return kq;
+        }
+
+        public List<FSanh_DTO> selectSLMax(FSanh_DTO sanhDTO)
+        {
+            return sanhDAL.selectSLMax(sanhDTO);
         }
     }
 }

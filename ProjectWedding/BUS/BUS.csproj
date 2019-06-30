@@ -31,6 +31,7 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Linq" />
     <Reference Include="System.Xml.Linq" />
@@ -45,8 +46,8 @@
     <Compile Include="FHoaDon_BUS.cs" />
     <Compile Include="FKhachHang_BUS.cs" />
     <Compile Include="FMenu_BUS.cs" />
+    <Compile Include="FMonAn_BUS.cs" />
     <Compile Include="FNoiQUi_BUS.cs" />
-    <Compile Include="FQuanLyHoaDon_BUS.cs" />
     <Compile Include="FSanh_BUS.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
@@ -59,6 +60,9 @@
       <Project>{59202ed7-fc74-4c4f-96a0-b3e7afcefc3c}</Project>
       <Name>DTO</Name>
     </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

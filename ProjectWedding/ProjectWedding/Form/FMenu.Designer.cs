@@ -29,6 +29,16 @@
         private void InitializeComponent()
         {
             this.btMenuMonAn = new System.Windows.Forms.Button();
+            this.btUndo = new System.Windows.Forms.Button();
+            this.tbTimKiem = new System.Windows.Forms.TextBox();
+            this.btTimKiem = new System.Windows.Forms.Button();
+            this.btThanhToan = new System.Windows.Forms.Button();
+            this.gridAn = new System.Windows.Forms.DataGridView();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.gridMenu = new System.Windows.Forms.DataGridView();
+            this.cbMaKH = new System.Windows.Forms.ComboBox();
+            ((System.ComponentModel.ISupportInitialize)(this.gridAn)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridMenu)).BeginInit();
             this.SuspendLayout();
             // 
             // btMenuMonAn
@@ -47,23 +57,125 @@
             this.btMenuMonAn.UseVisualStyleBackColor = false;
             this.btMenuMonAn.Click += new System.EventHandler(this.btMenuMonAn_Click);
             // 
+            // btUndo
+            // 
+            this.btUndo.Location = new System.Drawing.Point(571, 289);
+            this.btUndo.Name = "btUndo";
+            this.btUndo.Size = new System.Drawing.Size(127, 86);
+            this.btUndo.TabIndex = 0;
+            this.btUndo.Text = "Undo";
+            this.btUndo.UseVisualStyleBackColor = true;
+            this.btUndo.Click += new System.EventHandler(this.btUndo_Click);
+            // 
+            // tbTimKiem
+            // 
+            this.tbTimKiem.Font = new System.Drawing.Font("Microsoft Sans Serif", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(163)));
+            this.tbTimKiem.Location = new System.Drawing.Point(13, 71);
+            this.tbTimKiem.Name = "tbTimKiem";
+            this.tbTimKiem.Size = new System.Drawing.Size(407, 34);
+            this.tbTimKiem.TabIndex = 3;
+            // 
+            // btTimKiem
+            // 
+            this.btTimKiem.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btTimKiem.Location = new System.Drawing.Point(426, 71);
+            this.btTimKiem.Name = "btTimKiem";
+            this.btTimKiem.Size = new System.Drawing.Size(135, 36);
+            this.btTimKiem.TabIndex = 4;
+            this.btTimKiem.Text = "Tìm Kiếm";
+            this.btTimKiem.UseVisualStyleBackColor = true;
+            this.btTimKiem.Click += new System.EventHandler(this.btTimKiem_Click);
+            // 
+            // btThanhToan
+            // 
+            this.btThanhToan.Location = new System.Drawing.Point(717, 645);
+            this.btThanhToan.Name = "btThanhToan";
+            this.btThanhToan.Size = new System.Drawing.Size(704, 80);
+            this.btThanhToan.TabIndex = 5;
+            this.btThanhToan.Text = "Hoàn Tất";
+            this.btThanhToan.UseVisualStyleBackColor = true;
+            this.btThanhToan.Click += new System.EventHandler(this.btThanhToan_Click);
+            // 
+            // gridAn
+            // 
+            this.gridAn.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridAn.Location = new System.Drawing.Point(12, 132);
+            this.gridAn.Name = "gridAn";
+            this.gridAn.RowTemplate.Height = 24;
+            this.gridAn.Size = new System.Drawing.Size(538, 150);
+            this.gridAn.TabIndex = 8;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.AutoScroll = true;
+            this.flowLayoutPanel1.BackgroundImage = global::ProjectWedding.Properties.Resources.bill;
+            this.flowLayoutPanel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 132);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(538, 593);
+            this.flowLayoutPanel1.TabIndex = 9;
+            // 
+            // gridMenu
+            // 
+            this.gridMenu.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            this.gridMenu.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.DisplayedCells;
+            this.gridMenu.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gridMenu.Location = new System.Drawing.Point(717, 80);
+            this.gridMenu.Name = "gridMenu";
+            this.gridMenu.RowTemplate.Height = 24;
+            this.gridMenu.Size = new System.Drawing.Size(704, 559);
+            this.gridMenu.TabIndex = 2;
+            // 
+            // cbMaKH
+            // 
+            this.cbMaKH.Enabled = false;
+            this.cbMaKH.FormattingEnabled = true;
+            this.cbMaKH.Location = new System.Drawing.Point(1320, 50);
+            this.cbMaKH.Name = "cbMaKH";
+            this.cbMaKH.Size = new System.Drawing.Size(101, 24);
+            this.cbMaKH.TabIndex = 11;
+            this.cbMaKH.Visible = false;
+            // 
             // FMenu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1166, 450);
+            this.AutoSize = true;
+            this.BackgroundImage = global::ProjectWedding.Properties.Resources.bill;
+            this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
+            this.ClientSize = new System.Drawing.Size(1430, 803);
+            this.Controls.Add(this.cbMaKH);
+            this.Controls.Add(this.flowLayoutPanel1);
+            this.Controls.Add(this.gridAn);
+            this.Controls.Add(this.btThanhToan);
+            this.Controls.Add(this.btTimKiem);
+            this.Controls.Add(this.tbTimKiem);
+            this.Controls.Add(this.gridMenu);
+            this.Controls.Add(this.btUndo);
             this.Controls.Add(this.btMenuMonAn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.Name = "FMenu";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "MenuMonAn";
+            this.Load += new System.EventHandler(this.FMenu_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridAn)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridMenu)).EndInit();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private System.Windows.Forms.Button btMenuMonAn;
+        private System.Windows.Forms.Button btUndo;
+        private System.Windows.Forms.TextBox tbTimKiem;
+        private System.Windows.Forms.Button btTimKiem;
+        private System.Windows.Forms.Button btThanhToan;
+        private System.Windows.Forms.DataGridView gridAn;
+        private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
+        private System.Windows.Forms.DataGridView gridMenu;
+        private System.Windows.Forms.ComboBox cbMaKH;
     }
 }

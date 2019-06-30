@@ -26,7 +26,7 @@ namespace ProjectWedding
         FSanh_BUS sanhBUS = new FSanh_BUS();
         FKhachHang_BUS khachHangBUS = new FKhachHang_BUS();
         FDatTiec_BUS datTiecBUS = new FDatTiec_BUS();
-
+        FHoaDon_BUS hoaDonBUS = new FHoaDon_BUS();
 
         private void btdtReturn_Click(object sender, EventArgs e)
         {
@@ -40,8 +40,6 @@ namespace ProjectWedding
         private void button3_Click(object sender, EventArgs e)
         {
             FMenu menu = new FMenu();
-            this.Hide();
-            this.Close();
             menu.Show();
         }
 
@@ -53,21 +51,11 @@ namespace ProjectWedding
             this.Close();
             hoaDon.Show();
         }
-
         // kiểm tra lại những thông tin của khách hàng có hợp lệ hay không 
         // khi thông tin đã hoàn toàn hợp lệ sẽ chuyển sang bước chọn menu
 
-        private void btDatTiec_Click(object sender, EventArgs e)
-        {
-            FMain main = new FMain();
-            MessageBox.Show("Dat tiec thanh cong");
-            this.Hide();
-            this.Close();
-            main.Show();
-        }
-
         // load loại sảnh lên bảng đặt tiệc sau đó trả về mã sảnh
-        private int LoadLoaiSanh()
+        private void LoadLoaiSanh()
         {
             List<FSanh_DTO> listLoadSanh = sanhBUS.select();
             if(listLoadSanh==null)
@@ -79,19 +67,15 @@ namespace ProjectWedding
             cbSanh.ValueMember = "maSanh";
             CurrencyManager myCurrencyManager = (CurrencyManager)this.BindingContext[cbSanh.DataSource];
             myCurrencyManager.Refresh();
-            return sanhDTO.maSanh;
+            
+
+            if (cbSanh.Items.Count > 0)
+            {
+                cbSanh.SelectedIndex = 0;
+            }
         }
 
         //kiem tra co load duoc sanh hay khong
-        private bool CheckMaSanh()
-        {
-            bool kq = false;
-            if(LoadLoaiSanh() != null)
-            {
-                kq = true;
-            }
-            return kq;
-        }
 
         // them khach hang vao truoc khi an nut Kiem tra
         private bool InsertKhacHang()
@@ -113,7 +97,7 @@ namespace ProjectWedding
             datTiecDTO.slBan = int.Parse(tbSlBan.Text);
             datTiecDTO.tenCRFake = tbTenCR.Text;
             datTiecDTO.tenCDFake = tbTenCD.Text;
-            datTiecDTO.loaiSanhFake = cbSanh.Text;
+            datTiecDTO.loaiSanhFake = int.Parse(cbSanh.SelectedValue.ToString());
             bool kq=datTiecBUS.Add(datTiecDTO);
             if(kq==true)
             {
@@ -121,17 +105,36 @@ namespace ProjectWedding
             }
         }
 
+        private void InsertHoadDon()
+        {
+            hoaDonDTO.ngayThanhToan = DateTime.Parse(ngayTT.Value.ToString());
+            hoaDonDTO.tenCRFake = tbTenCR.Text;
+            hoaDonDTO.tenCDFake = tbTenCD.Text;
+            hoaDonDTO.loaiSanhFake = int.Parse(cbSanh.SelectedValue.ToString());
+            hoaDonBUS.Add(hoaDonDTO);
+        }
+
         // insert dữ liệu vào các bảng
+        //disable textboxes sau khi kiem tra thanh cong
         private void btnCheck_Click(object sender, EventArgs e)
         {
             try
             {
                 if(InsertKhacHang()==true)
                 {
-                    if(CheckMaSanh()==true)
-                    {
-                        InsertDatTiec();
-                    }
+
+                    InsertHoadDon();
+                    InsertDatTiec();
+
+                    tbTenCR.Enabled = false;
+                    tbTenCD.Enabled = false;
+                    tbSlBan.Enabled = false;
+                    tbDT.Enabled = false;
+                    tbTienCoc.Enabled = false;
+                    NgayDT.Enabled = false;
+                    cbCa.Enabled = false;
+                    cbSanh.Enabled = false;
+
                 }
             }
             catch(Exception ex)
@@ -141,10 +144,41 @@ namespace ProjectWedding
 
         }
 
+        private void CheckSLMAX()
+        {
+            try
+            {
+                if (int.Parse(tbSlBan.Text) < int.Parse(tbMax.Text))
+                    MessageBox.Show("Moi ban nhap tiep");
+            }
+            catch(Exception ex)
+            {
+                DialogResult re = new DialogResult();
+                re=MessageBox.Show("So luong ban phai nho hon so luong ban toi da", tbMax.Text, MessageBoxButtons.OK);
+                if(re==DialogResult.OK)
+                {
+                    Application.Restart();
+                }
+            }
+        }
+
+        private void BindingSLMax()
+        {
+            List<FSanh_DTO> list= sanhBUS.selectSLMax(sanhDTO);
+            Binding max = new Binding("Text", list, "soluongMax");
+            tbMax.DataBindings.Add(max);
+        }
+
         private void FDatTiec_Load(object sender, EventArgs e)
         {
+            BindingSLMax();
             LoadLoaiSanh();
         }
 
+        private void btCheckMax_Click(object sender, EventArgs e)
+        {
+            
+            CheckSLMAX();
+        }
     }
 }
