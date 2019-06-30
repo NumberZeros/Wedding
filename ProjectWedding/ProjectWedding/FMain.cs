@@ -61,7 +61,8 @@ namespace ProjectWedding
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            FQuanLyCT quanLyCT = new FQuanLyCT();
+            quanLyCT.Show();
         }
 
         //load text từ FLogin vô cái lblRole ở dưới hình người dùng để biết user hay admin

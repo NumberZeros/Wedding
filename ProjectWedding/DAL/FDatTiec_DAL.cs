@@ -56,6 +56,8 @@ namespace DAL
             }
         }
 
+  
+
         public List<FDatTiec_DTO> SelectTraCuu(string name)
         {
             List<FDatTiec_DTO> list = new List<FDatTiec_DTO>();
@@ -103,6 +105,51 @@ namespace DAL
                 }
                 return list;
             }
+        }
+
+        public List<FDatTiec_DTO> groupbyThongke()
+        {
+            List<FDatTiec_DTO> listDatTiec = new List<FDatTiec_DTO>();
+            string query = string.Empty;
+            query += "select [TenSanh],[NgayThanhToan],count([MaHD]) as [TongHD], sum([TongTien]) as [TongTien]";
+            query += " from [DATTIEC],[SANH],[HOADON]";
+            query += " where ([DATTIEC.MaSanh] = [SANH.MaSanh]) AND ([SANH.MaSanh]=[HOADON.MaSanh])";
+
+            using (SqlConnection conn = new SqlConnection(xuly.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = conn;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    try
+                    {
+                        conn.Open();
+                        SqlDataReader reader = null;
+                        reader = cmd.ExecuteReader();
+                        if (reader.HasRows == true)
+                        {
+                            while (reader.Read())
+                            {
+                                FDatTiec_DTO db = new FDatTiec_DTO();
+                                db.tenSanhFake= reader["TenSanh"].ToString();  // db.maDT la ten bien DTO con ["MaDT"] la cai minh goi tren query
+                                db.ngayDT = DateTime.Parse(reader["NgayThanhToan"].ToString());
+                                db.tongHD = int.Parse(reader["TongHD"].ToString());
+                                db.tongTien = int.Parse(reader["TongTien"].ToString());
+                                listDatTiec.Add(db);
+                            }
+                        }
+                        conn.Close();
+                        conn.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        conn.Close();
+                        return null;
+                    }
+                }
+            }
+            return listDatTiec;
         }
     }
 }

@@ -24,6 +24,11 @@ namespace BUS
             return kq;
         }
 
+        public List<FDatTiec_DTO> groupbyThongke()
+        {
+            return datTiecDAL.groupbyThongke();
+        }
+
         public List<FDatTiec_DTO> SelectTop1()
         {
             return datTiecDAL.SelectTop1();

@@ -95,5 +95,39 @@ namespace DAL
                 return listMonAn;
             }
         }
+
+        public bool Chinhsua(FMonAn_DTO monanDTO)
+        {
+            string query = String.Empty;
+            query += "update MONAN set [Ten]=@tenMonAn, [DonGia]=@donGia";
+            query += " where [MaMonAn]=@maMonAn";
+            using (SqlConnection con = new SqlConnection(xuly.ConnectionString))
+            {
+                using (SqlCommand cmd = new SqlCommand())
+                {
+                    cmd.Connection = con;
+                    cmd.CommandType = System.Data.CommandType.Text;
+                    cmd.CommandText = query;
+                    cmd.Parameters.AddWithValue("@maMonAn", monanDTO.maMonAn);
+                    cmd.Parameters.AddWithValue("@tenMonAn", monanDTO.ten);
+                    cmd.Parameters.AddWithValue("@donGia", monanDTO.donGia);
+
+                    try
+                    {
+                        con.Open();
+                        cmd.ExecuteNonQuery();
+                        con.Close();
+                        con.Dispose();
+                    }
+                    catch (Exception ex)
+                    {
+                        con.Close();
+                        return false;
+                    }
+                }
+            }
+            return true;
+        }
+
     }
 }

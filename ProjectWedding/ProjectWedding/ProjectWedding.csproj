@@ -97,11 +97,29 @@
     <Compile Include="FMain.Designer.cs">
       <DependentUpon>FMain.cs</DependentUpon>
     </Compile>
+    <Compile Include="Form\FMonAn.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FMonAn.Designer.cs">
+      <DependentUpon>FMonAn.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FQuanLyCT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FQuanLyCT.Designer.cs">
+      <DependentUpon>FQuanLyCT.cs</DependentUpon>
+    </Compile>
     <Compile Include="Form\FSanh.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form\FSanh.Designer.cs">
       <DependentUpon>FSanh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form\FThongKe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form\FThongKe.Designer.cs">
+      <DependentUpon>FThongKe.cs</DependentUpon>
     </Compile>
     <Compile Include="Form\FTraCuu.cs">
       <SubType>Form</SubType>
@@ -147,8 +165,17 @@
     <EmbeddedResource Include="Form\FHoaDon.resx">
       <DependentUpon>FHoaDon.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Form\FMonAn.resx">
+      <DependentUpon>FMonAn.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FQuanLyCT.resx">
+      <DependentUpon>FQuanLyCT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form\FSanh.resx">
       <DependentUpon>FSanh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form\FThongKe.resx">
+      <DependentUpon>FThongKe.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FTraCuu.resx">
       <DependentUpon>FTraCuu.cs</DependentUpon>
