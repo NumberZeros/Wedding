@@ -133,18 +133,6 @@
     <Compile Include="Form\FMenu.Designer.cs">
       <DependentUpon>FMenu.cs</DependentUpon>
     </Compile>
-    <Compile Include="frm1.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="frm1.Designer.cs">
-      <DependentUpon>frm1.cs</DependentUpon>
-    </Compile>
-    <Compile Include="frm2.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="frm2.Designer.cs">
-      <DependentUpon>frm2.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WaitForm.cs">
@@ -182,12 +170,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Form\FMenu.resx">
       <DependentUpon>FMenu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm1.resx">
-      <DependentUpon>frm1.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="frm2.resx">
-      <DependentUpon>frm2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
