@@ -8,13 +8,13 @@ D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\DTO\bin
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\DTO\obj\Debug\DTO.dll
 D:\learning\nhập môn công nghệ phần mềm\Wedding\ProjectWedding\DTO\obj\Debug\DTO.pdb
-D:\Git_Projrect\Wedding\ProjectWedding\DTO\bin\Debug\DTO.dll
-D:\Git_Projrect\Wedding\ProjectWedding\DTO\bin\Debug\DTO.pdb
-D:\Git_Projrect\Wedding\ProjectWedding\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
-D:\Git_Projrect\Wedding\ProjectWedding\DTO\obj\Debug\DTO.dll
-D:\Git_Projrect\Wedding\ProjectWedding\DTO\obj\Debug\DTO.pdb
 D:\Wedding\Wedding\ProjectWedding\DTO\bin\Debug\DTO.dll
 D:\Wedding\Wedding\ProjectWedding\DTO\bin\Debug\DTO.pdb
 D:\Wedding\Wedding\ProjectWedding\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
 D:\Wedding\Wedding\ProjectWedding\DTO\obj\Debug\DTO.dll
 D:\Wedding\Wedding\ProjectWedding\DTO\obj\Debug\DTO.pdb
+D:\Git_Projrect\Wedding\ProjectWedding\DTO\bin\Debug\DTO.dll
+D:\Git_Projrect\Wedding\ProjectWedding\DTO\bin\Debug\DTO.pdb
+D:\Git_Projrect\Wedding\ProjectWedding\DTO\obj\Debug\DTO.csprojResolveAssemblyReference.cache
+D:\Git_Projrect\Wedding\ProjectWedding\DTO\obj\Debug\DTO.dll
+D:\Git_Projrect\Wedding\ProjectWedding\DTO\obj\Debug\DTO.pdb

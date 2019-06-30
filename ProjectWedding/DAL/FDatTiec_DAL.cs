@@ -111,9 +111,10 @@ namespace DAL
         {
             List<FDatTiec_DTO> listDatTiec = new List<FDatTiec_DTO>();
             string query = string.Empty;
-            query += "select [TenSanh],[NgayThanhToan],count([MaHD]) as [TongHD], sum([TongTien]) as [TongTien]";
-            query += " from [DATTIEC],[SANH],[HOADON]";
-            query += " where ([DATTIEC.MaSanh] = [SANH.MaSanh]) AND ([SANH.MaSanh]=[HOADON.MaSanh])";
+            query += "select [TenSanh], [NgayThanhToan], count([MaHD]) as [TongHD], sum([TongTien]) as [TongTien]";
+            query += " from [DATTIEC], [SANH], [HOADON]";
+            query += " where (DATTIEC.[MaSanh] = SANH.[MaSanh]) AND (SANH.[MaSanh]=HOADON.[MaSanh])";
+            query += " group by [TenSanh], [NgayThanhToan]";
 
             using (SqlConnection conn = new SqlConnection(xuly.ConnectionString))
             {
