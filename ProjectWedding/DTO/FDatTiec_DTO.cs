@@ -22,5 +22,10 @@ namespace DTO
         public string tenCRFake { get; set; }
         public string tenCDFake { get; set; }
         public int loaiSanhFake { get; set; }
+        // biến tạm để thống kê
+        public int tongHD { get; set; }
+        public int tongTien { get; set; }
+        public string tenSanhFake { get; set; }
+        
     }
 }
