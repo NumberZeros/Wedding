@@ -56,9 +56,9 @@
             this.btsReturn.Image = global::ProjectWedding.Properties.Resources.back_arrow;
             this.btsReturn.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.btsReturn.Location = new System.Drawing.Point(9, 10);
-            this.btsReturn.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btsReturn.Margin = new System.Windows.Forms.Padding(2);
             this.btsReturn.Name = "btsReturn";
-            this.btsReturn.Size = new System.Drawing.Size(93, 26);
+            this.btsReturn.Size = new System.Drawing.Size(93, 32);
             this.btsReturn.TabIndex = 0;
             this.btsReturn.Text = "Return";
             this.btsReturn.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,7 +142,7 @@
             // 
             this.tbGhiChu.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbGhiChu.Location = new System.Drawing.Point(150, 117);
-            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbGhiChu.Margin = new System.Windows.Forms.Padding(2);
             this.tbGhiChu.Multiline = true;
             this.tbGhiChu.Name = "tbGhiChu";
             this.tbGhiChu.Size = new System.Drawing.Size(833, 99);
@@ -152,7 +152,7 @@
             // 
             this.tbDonGia.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbDonGia.Location = new System.Drawing.Point(907, 55);
-            this.tbDonGia.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbDonGia.Margin = new System.Windows.Forms.Padding(2);
             this.tbDonGia.Name = "tbDonGia";
             this.tbDonGia.Size = new System.Drawing.Size(76, 32);
             this.tbDonGia.TabIndex = 24;
@@ -161,7 +161,7 @@
             // 
             this.tbSLBan.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbSLBan.Location = new System.Drawing.Point(724, 53);
-            this.tbSLBan.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbSLBan.Margin = new System.Windows.Forms.Padding(2);
             this.tbSLBan.Name = "tbSLBan";
             this.tbSLBan.Size = new System.Drawing.Size(62, 32);
             this.tbSLBan.TabIndex = 23;
@@ -170,69 +170,77 @@
             // 
             this.tbTen.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbTen.Location = new System.Drawing.Point(150, 57);
-            this.tbTen.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbTen.Margin = new System.Windows.Forms.Padding(2);
             this.tbTen.Name = "tbTen";
             this.tbTen.Size = new System.Drawing.Size(162, 32);
             this.tbTen.TabIndex = 22;
             // 
             // btTroGiup
             // 
+            this.btTroGiup.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btTroGiup.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btTroGiup.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btTroGiup.Image = global::ProjectWedding.Properties.Resources.question_1;
             this.btTroGiup.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btTroGiup.Location = new System.Drawing.Point(879, 246);
-            this.btTroGiup.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btTroGiup.Location = new System.Drawing.Point(896, 245);
+            this.btTroGiup.Margin = new System.Windows.Forms.Padding(2);
             this.btTroGiup.Name = "btTroGiup";
-            this.btTroGiup.Size = new System.Drawing.Size(104, 41);
+            this.btTroGiup.Size = new System.Drawing.Size(113, 41);
             this.btTroGiup.TabIndex = 35;
             this.btTroGiup.Text = "Trợ Giúp";
             this.btTroGiup.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btTroGiup.UseVisualStyleBackColor = true;
+            this.btTroGiup.UseVisualStyleBackColor = false;
             this.btTroGiup.Click += new System.EventHandler(this.btTroGiup_Click);
             // 
             // btSua
             // 
+            this.btSua.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btSua.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btSua.Font = new System.Drawing.Font("Microsoft YaHei", 10.5F);
             this.btSua.Image = global::ProjectWedding.Properties.Resources.updated;
             this.btSua.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btSua.Location = new System.Drawing.Point(638, 246);
-            this.btSua.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btSua.Location = new System.Drawing.Point(629, 245);
+            this.btSua.Margin = new System.Windows.Forms.Padding(2);
             this.btSua.Name = "btSua";
-            this.btSua.Size = new System.Drawing.Size(93, 41);
+            this.btSua.Size = new System.Drawing.Size(102, 41);
             this.btSua.TabIndex = 34;
             this.btSua.Text = "Sửa";
             this.btSua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btSua.UseVisualStyleBackColor = true;
+            this.btSua.UseVisualStyleBackColor = false;
             this.btSua.Click += new System.EventHandler(this.btSua_Click);
             // 
             // btXoa
             // 
+            this.btXoa.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btXoa.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btXoa.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btXoa.Image = global::ProjectWedding.Properties.Resources.clear;
             this.btXoa.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btXoa.Location = new System.Drawing.Point(321, 246);
-            this.btXoa.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btXoa.Location = new System.Drawing.Point(312, 245);
+            this.btXoa.Margin = new System.Windows.Forms.Padding(2);
             this.btXoa.Name = "btXoa";
-            this.btXoa.Size = new System.Drawing.Size(93, 41);
+            this.btXoa.Size = new System.Drawing.Size(102, 41);
             this.btXoa.TabIndex = 33;
             this.btXoa.Text = "Xoá";
             this.btXoa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btXoa.UseVisualStyleBackColor = true;
+            this.btXoa.UseVisualStyleBackColor = false;
             this.btXoa.Click += new System.EventHandler(this.btXoa_Click);
             // 
             // btThem
             // 
+            this.btThem.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+            this.btThem.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.btThem.Font = new System.Drawing.Font("Microsoft YaHei", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.btThem.Image = global::ProjectWedding.Properties.Resources.add2;
             this.btThem.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.btThem.Location = new System.Drawing.Point(90, 246);
-            this.btThem.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.btThem.Location = new System.Drawing.Point(51, 245);
+            this.btThem.Margin = new System.Windows.Forms.Padding(2);
             this.btThem.Name = "btThem";
-            this.btThem.Size = new System.Drawing.Size(93, 41);
+            this.btThem.Size = new System.Drawing.Size(102, 41);
             this.btThem.TabIndex = 32;
             this.btThem.Text = "Thêm";
             this.btThem.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.btThem.UseVisualStyleBackColor = true;
+            this.btThem.UseVisualStyleBackColor = false;
             this.btThem.Click += new System.EventHandler(this.btThem_Click);
             // 
             // label6
@@ -249,7 +257,7 @@
             // 
             this.tbLoaiSanh.Font = new System.Drawing.Font("Microsoft YaHei", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tbLoaiSanh.Location = new System.Drawing.Point(445, 55);
-            this.tbLoaiSanh.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.tbLoaiSanh.Margin = new System.Windows.Forms.Padding(2);
             this.tbLoaiSanh.Name = "tbLoaiSanh";
             this.tbLoaiSanh.Size = new System.Drawing.Size(57, 32);
             this.tbLoaiSanh.TabIndex = 37;
@@ -279,7 +287,7 @@
             this.Controls.Add(this.gridSanh);
             this.Controls.Add(this.btsReturn);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "FSanh";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "FSanh";
